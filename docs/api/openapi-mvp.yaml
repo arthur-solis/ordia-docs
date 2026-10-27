@@ -1,0 +1,324 @@
+openapi: 3.0.3
+info:
+  title: ORDIA API MVP
+  version: 0.1.0
+  description: |
+    Contrato inicial do MVP. Os endpoints de criação inicial de Tenant e login por access token estão implementados.
+    Os demais caminhos permanecem como especificação até a respectiva entrega.
+servers:
+  - url: /api/v1
+security:
+  - bearerAuth: []
+paths:
+  /tenants:
+    post:
+      tags: [Tenants]
+      security: []
+      summary: Cria o Tenant e seu administrador inicial
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/CreateTenantRequest' } } }
+      responses:
+        '201': { description: Tenant e administrador criados, content: { application/json: { schema: { $ref: '#/components/schemas/TokenResponse' } } } }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /auth/login:
+    post:
+      tags: [Authentication]
+      security: []
+      summary: Inicia uma sessão
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/LoginRequest' }
+            example: { email: "admin@clinica.example", password: "senha-nao-real" }
+      responses:
+        '200':
+          description: Access token emitido
+          content: { application/json: { schema: { $ref: '#/components/schemas/TokenResponse' } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '429': { $ref: '#/components/responses/RateLimited' }
+  /auth/refresh:
+    post:
+      tags: [Authentication]
+      security: []
+      summary: Rotaciona refresh token
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/RefreshRequest' } } }
+      responses:
+        '200': { description: Novo par de tokens, content: { application/json: { schema: { $ref: '#/components/schemas/TokenPair' } } } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+  /auth/switch-tenant:
+    post:
+      tags: [Authentication]
+      summary: Troca o Tenant Context da sessão
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/SwitchTenantRequest' } } }
+      responses:
+        '200': { description: Novo par de tokens, content: { application/json: { schema: { $ref: '#/components/schemas/TokenPair' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+  /tenants/current:
+    get:
+      tags: [Tenants]
+      summary: Retorna a organização do contexto atual
+      responses:
+        '200': { description: Tenant atual, content: { application/json: { schema: { $ref: '#/components/schemas/Tenant' } } } }
+        '403': { $ref: '#/components/responses/Forbidden' }
+    patch:
+      tags: [Tenants]
+      summary: Atualiza dados permitidos do Tenant
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/UpdateTenantRequest' } } }
+      responses:
+        '200': { description: Tenant atualizado, content: { application/json: { schema: { $ref: '#/components/schemas/Tenant' } } } }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /patients:
+    get:
+      tags: [Patients]
+      summary: Lista pacientes do Tenant atual
+      parameters:
+        - { $ref: '#/components/parameters/Page' }
+        - { $ref: '#/components/parameters/PageSize' }
+        - in: query
+          name: query
+          schema: { type: string, maxLength: 120 }
+      responses:
+        '200': { description: Página de pacientes, content: { application/json: { schema: { $ref: '#/components/schemas/PatientPage' } } } }
+    post:
+      tags: [Patients]
+      summary: Cria paciente
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/CreatePatientRequest' } } }
+      responses:
+        '201': { description: Paciente criado, content: { application/json: { schema: { $ref: '#/components/schemas/Patient' } } } }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /patients/{patientId}:
+    parameters: [{ $ref: '#/components/parameters/PatientId' }]
+    get:
+      tags: [Patients]
+      summary: Consulta um paciente autorizado
+      responses:
+        '200': { description: Paciente, content: { application/json: { schema: { $ref: '#/components/schemas/Patient' } } } }
+        '404': { $ref: '#/components/responses/NotFound' }
+    patch:
+      tags: [Patients]
+      summary: Atualiza dados permitidos
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/UpdatePatientRequest' } } }
+      responses:
+        '200': { description: Paciente atualizado, content: { application/json: { schema: { $ref: '#/components/schemas/Patient' } } } }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /patients/{patientId}/archive:
+    parameters: [{ $ref: '#/components/parameters/PatientId' }]
+    post:
+      tags: [Patients]
+      summary: Arquiva paciente
+      responses:
+        '204': { description: Paciente arquivado }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /resources:
+    get:
+      tags: [Scheduling]
+      summary: Lista recursos do Tenant atual
+      responses:
+        '200': { description: Recursos, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/Resource' } } } } }
+    post:
+      tags: [Scheduling]
+      summary: Cria recurso
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/CreateResourceRequest' } } }
+      responses:
+        '201': { description: Recurso criado, content: { application/json: { schema: { $ref: '#/components/schemas/Resource' } } } }
+  /appointments:
+    get:
+      tags: [Scheduling]
+      summary: Consulta agenda em um período
+      parameters:
+        - { name: startsAt, in: query, required: true, schema: { type: string, format: date-time } }
+        - { name: endsAt, in: query, required: true, schema: { type: string, format: date-time } }
+        - { name: resourceId, in: query, schema: { type: string, format: uuid } }
+      responses:
+        '200': { description: Agendamentos, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/Appointment' } } } } }
+    post:
+      tags: [Scheduling]
+      summary: Cria agendamento sem conflito
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/CreateAppointmentRequest' }
+      responses:
+        '201': { description: Agendamento criado, content: { application/json: { schema: { $ref: '#/components/schemas/Appointment' } } } }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/ValidationError' }
+  /appointments/{appointmentId}/confirm:
+    parameters:
+      - { name: appointmentId, in: path, required: true, schema: { type: string, format: uuid } }
+    post:
+      tags: [Scheduling]
+      summary: Confirma agendamento
+      responses:
+        '200': { description: Agendamento confirmado, content: { application/json: { schema: { $ref: '#/components/schemas/Appointment' } } } }
+        '409': { $ref: '#/components/responses/Conflict' }
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer, bearerFormat: JWT }
+  parameters:
+    Page: { name: page, in: query, schema: { type: integer, minimum: 1, default: 1 } }
+    PageSize: { name: pageSize, in: query, schema: { type: integer, minimum: 1, maximum: 100, default: 20 } }
+    PatientId: { name: patientId, in: path, required: true, schema: { type: string, format: uuid } }
+  responses:
+    Unauthorized: { description: Autenticação ausente, inválida ou expirada, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+    Forbidden: { description: Membership, Tenant ou permission insuficiente, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+    NotFound: { description: Recurso inexistente ou fora do escopo, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+    Conflict: { description: Conflito de agenda, estado ou integridade, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+    ValidationError: { description: Dados inválidos, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+    RateLimited: { description: Limite temporário excedido, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }
+  schemas:
+    LoginRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email: { type: string, format: email, maxLength: 254 }
+        password: { type: string, format: password, minLength: 1, maxLength: 256 }
+    RefreshRequest:
+      type: object
+      required: [refreshToken]
+      properties: { refreshToken: { type: string, minLength: 1 } }
+    SwitchTenantRequest:
+      type: object
+      required: [tenantId]
+      properties: { tenantId: { type: string, format: uuid } }
+    TokenPair:
+      type: object
+      description: Contrato planejado para a futura rotação de refresh token.
+      required: [accessToken, refreshToken, tokenType, expiresIn]
+      properties:
+        accessToken: { type: string }
+        refreshToken: { type: string }
+        tokenType: { type: string, example: Bearer }
+        expiresIn: { type: integer, example: 900 }
+    TokenResponse:
+      type: object
+      required: [accessToken, tokenType, expiresIn, tenantId]
+      properties:
+        accessToken: { type: string }
+        tokenType: { type: string, example: Bearer }
+        expiresIn: { type: integer, example: 900 }
+        tenantId: { type: string, format: uuid }
+    CreateTenantRequest:
+      type: object
+      required: [tenantName, timezone, adminName, adminEmail, adminPassword]
+      properties:
+        tenantName: { type: string, minLength: 2, maxLength: 160 }
+        timezone: { type: string, maxLength: 64, example: America/Cuiaba }
+        adminName: { type: string, minLength: 2, maxLength: 160 }
+        adminEmail: { type: string, format: email, maxLength: 254 }
+        adminPassword: { type: string, format: password, minLength: 12, maxLength: 256 }
+    Tenant:
+      type: object
+      required: [id, name, timezone, status]
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        timezone: { type: string, example: America/Cuiaba }
+        status: { type: string, enum: [PENDING, ACTIVE, SUSPENDED, CLOSED] }
+    UpdateTenantRequest:
+      type: object
+      properties:
+        name: { type: string, minLength: 2, maxLength: 160 }
+        timezone: { type: string, maxLength: 64 }
+    Patient:
+      type: object
+      required: [id, fullName, birthDate, status]
+      properties:
+        id: { type: string, format: uuid }
+        fullName: { type: string }
+        birthDate: { type: string, format: date }
+        document: { type: string, nullable: true }
+        phone: { type: string, nullable: true }
+        email: { type: string, format: email, nullable: true }
+        status: { type: string, enum: [ACTIVE, ARCHIVED] }
+    CreatePatientRequest:
+      type: object
+      required: [fullName, birthDate]
+      properties:
+        fullName: { type: string, minLength: 2, maxLength: 160 }
+        birthDate: { type: string, format: date }
+        document: { type: string, maxLength: 32 }
+        phone: { type: string, maxLength: 32 }
+        email: { type: string, format: email }
+      anyOf: [{ required: [phone] }, { required: [email] }]
+    UpdatePatientRequest:
+      type: object
+      minProperties: 1
+      properties:
+        fullName: { type: string, minLength: 2, maxLength: 160 }
+        birthDate: { type: string, format: date }
+        document: { type: string, maxLength: 32 }
+        phone: { type: string, maxLength: 32 }
+        email: { type: string, format: email }
+    PatientPage:
+      type: object
+      required: [items, page, pageSize, total]
+      properties:
+        items: { type: array, items: { $ref: '#/components/schemas/Patient' } }
+        page: { type: integer }
+        pageSize: { type: integer }
+        total: { type: integer, format: int64 }
+    Resource:
+      type: object
+      required: [id, type, name, status]
+      properties:
+        id: { type: string, format: uuid }
+        type: { type: string, enum: [PROFESSIONAL, ROOM, EQUIPMENT] }
+        name: { type: string }
+        status: { type: string, enum: [ACTIVE, INACTIVE] }
+    CreateResourceRequest:
+      type: object
+      required: [type, name]
+      properties:
+        type: { type: string, enum: [PROFESSIONAL, ROOM, EQUIPMENT] }
+        name: { type: string, minLength: 2, maxLength: 160 }
+    Appointment:
+      type: object
+      required: [id, patientId, resourceIds, startsAt, endsAt, status]
+      properties:
+        id: { type: string, format: uuid }
+        patientId: { type: string, format: uuid }
+        resourceIds: { type: array, items: { type: string, format: uuid }, minItems: 1 }
+        startsAt: { type: string, format: date-time }
+        endsAt: { type: string, format: date-time }
+        status: { type: string, enum: [SCHEDULED, CONFIRMED, CANCELLED, COMPLETED, NO_SHOW] }
+    CreateAppointmentRequest:
+      type: object
+      required: [patientId, resourceIds, startsAt, endsAt]
+      properties:
+        patientId: { type: string, format: uuid }
+        resourceIds: { type: array, items: { type: string, format: uuid }, minItems: 1 }
+        startsAt: { type: string, format: date-time }
+        endsAt: { type: string, format: date-time }
+        notes: { type: string, maxLength: 2000 }
+    Error:
+      type: object
+      required: [code, message, traceId]
+      properties:
+        code: { type: string, example: APPOINTMENT_CONFLICT }
+        message: { type: string, example: Não foi possível concluir a operação. }
+        traceId: { type: string }
+        fields:
+          type: array
+          items:
+            type: object
+            required: [field, code]
+            properties:
+              field: { type: string }
+              code: { type: string }
+              message: { type: string }
