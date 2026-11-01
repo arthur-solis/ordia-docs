@@ -1,11 +1,11 @@
 # Modelo Físico Inicial do MVP
 
-Este documento transforma o [modelo de domínio](../product/domain-model.md) em uma referência de persistência para o MVP. Ele define a intenção do schema; não é ainda uma migration executável nem autoriza o início da Fase 3.
+Este documento transforma o [modelo de domínio](../product/domain-model.md) em uma referência de persistência para o MVP. Ele descreve o schema de referência. As migrations executáveis pertencem à aplicação; a aprovação de produção exige validação operacional.
 
 ## Convenções
 
 - Banco: MySQL 8.0+, charset `utf8mb4`, collation `utf8mb4_0900_ai_ci`.
-- Chaves primárias: `BINARY(16)`, com UUIDv7 gerado pela aplicação. A API serializa IDs como UUID textual.
+- Chaves primárias: `BINARY(16)`, com UUIDv4 gerado pela aplicação nesta entrega; adoção de UUIDv7 exige decisão e teste próprios. A API serializa IDs como UUID textual.
 - Datas: `DATETIME(6)` em UTC. A timezone de apresentação pertence ao Tenant.
 - Estados e tipos: `VARCHAR(32)` com validação na aplicação e `CHECK` quando a versão/configuração do MySQL permitir.
 - Dados de Tenant: toda tabela tenant-scoped recebe `tenant_id NOT NULL`; consultas e índices começam por esse campo.
@@ -26,7 +26,7 @@ Este documento transforma o [modelo de domínio](../product/domain-model.md) em 
 | `refresh_token_sessions` | `id, user_id, token_hash, family_id, issued_at, expires_at, revoked_at, replaced_by_id, ip_hash, user_agent` | `UNIQUE(token_hash)`; índice `(user_id, expires_at)`; rotação por família. |
 | `password_recovery_tokens` | `id, user_id, token_hash, expires_at, consumed_at, created_at` | `UNIQUE(token_hash)`; somente um token ativo por usuário. |
 | `membership_invitations` | `id, membership_id, email_normalized, token_hash, expires_at, accepted_at, cancelled_at, created_by` | `UNIQUE(token_hash)`; convite é inseparável da Membership `PENDING`. |
-| `patients` | `id, tenant_id, full_name, full_name_normalized, birth_date, document_normalized, phone, email_normalized, status, archived_at, created_by, updated_by, created_at, updated_at` | `status ∈ ACTIVE/ARCHIVED`; índices `(tenant_id, status, full_name_normalized)`, `(tenant_id, document_normalized)`, `(tenant_id, birth_date, full_name_normalized)`. Documento único apenas quando preenchido. |
+| `patients` | `id, tenant_id, full_name, full_name_normalized, birth_date, document_normalized, phone, email_normalized, status, archived_at, created_by, updated_by, created_at, updated_at` | `status ∈ ACTIVE/ARCHIVED`; índices `(tenant_id, status, full_name_normalized)`, `(tenant_id, document_normalized)`, `(tenant_id, birth_date, full_name_normalized)`. Documento não é único: duplicidade apenas alerta, conforme DEC-MVP-006. |
 | `resources` | `id, tenant_id, type, name, status, capacity, deactivated_at, created_at, updated_at` | `type ∈ PROFESSIONAL/ROOM/EQUIPMENT`; capacidade 1 no MVP; `UNIQUE(tenant_id, type, name)`. |
 | `resource_schedules` | `id, tenant_id, resource_id, weekday, starts_at_local, ends_at_local` | índice `(tenant_id, resource_id, weekday)`. |
 | `resource_blocks` | `id, tenant_id, resource_id, starts_at, ends_at, reason, created_by` | índice `(tenant_id, resource_id, starts_at, ends_at)`; intervalo `start < end`. |
@@ -52,7 +52,7 @@ Este documento transforma o [modelo de domínio](../product/domain-model.md) em 
 | Tenant Context | `tenant_id` nas entidades tenant-scoped e validação em servidor |
 | Paciente e duplicidade | `patients` e seus índices de busca |
 | Recursos e Agenda | `resources`, horários/bloqueios, `appointments`, `appointment_resources` |
-| Arquivos e exportações | `files`, `exports` e armazenamento de objeto privado |
+| Arquivos e exportações | `files`, `exports` e conteúdo criptografado privado, conforme ADR-0002 |
 | Auditoria | `audit_events` |
 
 ## Próximos passos de implementação
