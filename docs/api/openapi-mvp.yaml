@@ -2049,7 +2049,7 @@
       },
       "post": {
         "summary": "Envia arquivo privado",
-        "description": "PDF, JPEG ou PNG de até 10 MB; máximo 10 arquivos ativos por proprietário; validação estrutural, antimalware obrigatório e criptografia autenticada. Parâmetros do formulário.",
+        "description": "PDF, JPEG ou PNG de até 10 MB; máximo 10 arquivos ativos por proprietário; validação estrutural, antimalware obrigatório e criptografia autenticada. Parâmetros do formulário. Quota de anexos de 1 GiB por Tenant, incluindo removidos logicamente.",
         "responses": {
           "201": {
             "description": "Operação concluída.",
@@ -2459,7 +2459,7 @@
     "/exports": {
       "post": {
         "summary": "Solicita job de exportação",
-        "description": "CSV/PDF; até 10.000 registros; 5 jobs ativos por instituição; validade de 24 horas.",
+        "description": "CSV/PDF; até 10.000 registros; 5 jobs ativos por instituição; validade de 24 horas. Até 100 solicitações por Tenant em 24 horas.",
         "responses": {
           "202": {
             "description": "Operação concluída.",
@@ -2511,6 +2511,31 @@
                 "$ref": "#/components/schemas/ExportDraft"
               }
             }
+          }
+        }
+      },
+      "get": {
+        "summary": "Lista exportações do solicitante com acesso atual",
+        "x-permission": "report:export e leitura da fonte",
+        "responses": {
+          "200": {
+            "description": "Até 100 exportações recentes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ExportJob"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401"
+          },
+          "403": {
+            "$ref": "#/components/responses/HTTP403"
           }
         }
       }
@@ -2634,6 +2659,52 @@
             }
           }
         ]
+      }
+    },
+    "/patients/duplicates": {
+      "post": {
+        "summary": "Consulta prévia de possível duplicidade antes da confirmação",
+        "x-permission": "patient:create",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientDraft"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Apenas sinalização, sem dados de outro paciente.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "possibleDuplicate"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "possibleDuplicate": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401"
+          },
+          "403": {
+            "$ref": "#/components/responses/HTTP403"
+          },
+          "422": {
+            "$ref": "#/components/responses/HTTP422"
+          }
+        }
       }
     }
   },

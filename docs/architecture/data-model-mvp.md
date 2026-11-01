@@ -32,7 +32,7 @@ Este documento transforma o [modelo de domínio](../product/domain-model.md) em 
 | `resource_blocks` | `id, tenant_id, resource_id, starts_at, ends_at, reason, created_by` | índice `(tenant_id, resource_id, starts_at, ends_at)`; intervalo `start < end`. |
 | `appointments` | `id, tenant_id, patient_id, starts_at, ends_at, status, notes, cancelled_at, created_by, updated_by, created_at, updated_at` | índices `(tenant_id, starts_at)`, `(tenant_id, patient_id, starts_at)`; intervalo `start < end`. |
 | `appointment_resources` | `appointment_id, resource_id` | PK composta; cada Appointment deve ter ao menos um recurso PROFESSIONAL ativo, validado na transação. |
-| `files` | `id, tenant_id, owner_type, owner_id, object_key, original_name, content_type, byte_size, checksum, removed_at, created_by, created_at` | `UNIQUE(object_key)`; índice `(tenant_id, owner_type, owner_id)`. Dono polimórfico é validado pela aplicação. |
+| `files` | `id, tenant_id, owner_type, owner_id, original_name, content_type, byte_size, encrypted_content, removed_at, created_by, created_at` | AES-GCM privado no MVP; índice `(tenant_id, owner_type, owner_id)`. Dono polimórfico é validado pela aplicação. |
 | `exports` | `id, tenant_id, requested_by, type, parameters_json, status, file_id, expires_at, created_at, completed_at, error_code` | índices `(tenant_id, status, created_at)`, `(requested_by, created_at)`. |
 | `audit_events` | `id, tenant_id NULL, actor_user_id NULL, action, resource_type, resource_id, occurred_at, correlation_id, ip_hash, metadata_json` | somente inserção pela aplicação; índices `(tenant_id, occurred_at)`, `(tenant_id, action, occurred_at)`, `(correlation_id)`. |
 
