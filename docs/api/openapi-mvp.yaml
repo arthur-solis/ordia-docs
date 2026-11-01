@@ -32,104 +32,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "security": [],
@@ -161,104 +91,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "security": [],
@@ -290,104 +150,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "security": [],
@@ -412,104 +202,34 @@
             "description": "Operação concluída sem corpo."
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         }
       }
@@ -530,104 +250,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         }
       }
@@ -648,104 +298,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "requestBody": {
@@ -769,104 +349,34 @@
             "description": "Operação concluída."
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "security": [],
@@ -891,104 +401,34 @@
             "description": "Operação concluída sem corpo."
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "security": [],
@@ -1020,104 +460,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "tenant:read"
@@ -1137,104 +507,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "tenant:update",
@@ -1270,104 +570,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "tenant:manage_members"
@@ -1390,104 +620,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "tenant:manage_members e/ou tenant:manage_roles",
@@ -1531,104 +691,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "tenant:manage_members e tenant:manage_roles",
@@ -1653,104 +743,34 @@
             "description": "Operação concluída sem corpo."
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "security": [],
@@ -1806,104 +826,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "patient:read",
@@ -1951,104 +901,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "patient:create",
@@ -2080,104 +960,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "patient:read",
@@ -2208,104 +1018,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "patient:update",
@@ -2341,104 +1081,34 @@
             "description": "Operação concluída sem corpo."
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "patient:archive",
@@ -2464,104 +1134,34 @@
             "description": "Operação concluída sem corpo."
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "patient:update",
@@ -2597,104 +1197,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "resource:read"
@@ -2714,104 +1244,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "resource:manage",
@@ -2843,104 +1303,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "resource:read",
@@ -2971,104 +1361,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "resource:manage",
@@ -3104,104 +1424,34 @@
             "description": "Operação concluída sem corpo."
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "resource:manage",
@@ -3237,104 +1487,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "appointment:read",
@@ -3382,104 +1562,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "appointment:create",
@@ -3511,104 +1621,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "appointment:read",
@@ -3639,104 +1679,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "appointment:update",
@@ -3779,104 +1749,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "appointment:confirm",
@@ -3909,104 +1809,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "appointment:cancel",
@@ -4039,104 +1869,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "appointment:complete",
@@ -4169,104 +1929,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "appointment:mark_no_show",
@@ -4302,104 +1992,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "file:read e leitura do proprietário",
@@ -4442,104 +2062,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "file:upload e leitura do proprietário",
@@ -4595,104 +2145,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "file:read e leitura do proprietário",
@@ -4718,104 +2198,34 @@
             "description": "Operação concluída sem corpo."
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "file:remove e leitura do proprietário",
@@ -4869,104 +2279,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "report:read e leitura da fonte",
@@ -5044,104 +2384,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "audit:read",
@@ -5202,104 +2472,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "report:export e leitura da fonte",
@@ -5331,104 +2531,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "report:export e leitura da fonte",
@@ -5462,104 +2592,34 @@
             }
           },
           "400": {
-            "description": "Requisição inválida",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP400"
           },
           "401": {
-            "description": "Autenticação ausente, inválida ou sessão inativa",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP401"
           },
           "403": {
-            "description": "Permissão insuficiente",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP403"
           },
           "404": {
-            "description": "Recurso inexistente ou fora do escopo",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP404"
           },
           "409": {
-            "description": "Conflito de estado, disponibilidade ou concorrência",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP409"
           },
           "413": {
-            "description": "Arquivo excede limite",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP413"
           },
           "422": {
-            "description": "Validação de dados",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP422"
           },
           "429": {
-            "description": "Limite temporário excedido",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP429"
           },
           "500": {
-            "description": "Falha interna sem detalhes sensíveis",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP500"
           },
           "503": {
-            "description": "Dependência indisponível ou não configurada",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
+            "$ref": "#/components/responses/HTTP503"
           }
         },
         "x-permission": "report:export e leitura da fonte",
@@ -5828,7 +2888,6 @@
             "maxLength": 64
           }
         },
-        "required": [],
         "additionalProperties": false,
         "minProperties": 1
       },
@@ -6240,7 +3299,6 @@
             }
           }
         },
-        "required": [],
         "additionalProperties": false
       },
       "ExportDraft": {
@@ -6370,7 +3428,6 @@
             "maxLength": 254
           }
         },
-        "required": [],
         "additionalProperties": false,
         "minProperties": 1
       },
@@ -6403,7 +3460,6 @@
             }
           }
         },
-        "required": [],
         "additionalProperties": false
       },
       "AppointmentUpdate": {
@@ -6432,8 +3488,109 @@
             "format": "date-time"
           }
         },
-        "required": [],
         "additionalProperties": false
+      }
+    },
+    "responses": {
+      "HTTP400": {
+        "description": "Requisição inválida",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "HTTP401": {
+        "description": "Autenticação ausente, inválida ou sessão inativa",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "HTTP403": {
+        "description": "Permissão insuficiente",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "HTTP404": {
+        "description": "Recurso inexistente ou fora do escopo",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "HTTP409": {
+        "description": "Conflito de estado, disponibilidade ou concorrência",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "HTTP413": {
+        "description": "Arquivo excede limite",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "HTTP422": {
+        "description": "Validação de dados",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "HTTP429": {
+        "description": "Limite temporário excedido",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "HTTP500": {
+        "description": "Falha interna sem detalhes sensíveis",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "HTTP503": {
+        "description": "Dependência indisponível ou não configurada",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
       }
     }
   }
