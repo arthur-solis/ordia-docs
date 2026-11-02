@@ -162,7 +162,7 @@ Workers não devem depender de contexto HTTP para descobrir o Tenant.
 
 ## 10. Arquivos
 
-Objetos armazenados em S3 ou compatível devem possuir organização lógica por Tenant.
+No MVP, o conteúdo é criptografado no MySQL conforme ADR-0002. Se houver migração futura para S3 ou compatível, os objetos deverão possuir organização lógica por Tenant.
 
 Exemplo conceitual:
 

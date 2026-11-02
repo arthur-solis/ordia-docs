@@ -1,10 +1,10 @@
 # Documento Mestre ORDIA
 
-**Versão:** 1.0.0  
+**Versão:** 1.1.0
 **Status:** Em desenvolvimento  
 **Classificação:** Documento oficial  
 **Origem:** consolidação e adaptação do Documento Mestre original do projeto  
-**Última atualização:** setembro de 2026
+**Última atualização:** 01/11/2026 (America/Cuiaba)
 
 ---
 
@@ -13,6 +13,7 @@
 | Versão | Data | Alteração |
 |---|---|---|
 | 1.0.0 | Setembro/2026 | Migração e reestruturação do Documento Mestre para o ORDIA |
+| 1.1.0 | 01/11/2026 | Alinhamento à implementação integrada e à prioridade do TCC; distinção entre MVP e evolução futura |
 
 ---
 
@@ -31,7 +32,7 @@
 11. [Requisitos não funcionais](#11-requisitos-não-funcionais)
 12. [Segurança](#12-segurança)
 13. [Documentação e decisões](#13-documentação-e-decisões)
-14. [Roadmap inicial](#14-roadmap-inicial)
+14. [Roadmap por etapa](#14-roadmap-por-etapa)
 15. [Regras absolutas do projeto](#15-regras-absolutas-do-projeto)
 16. [Histórico e evolução](#16-histórico-e-evolução)
 
@@ -44,6 +45,12 @@ Este documento estabelece a visão oficial do **ORDIA** e consolida suas princip
 Ele deve funcionar como uma fonte central de referência para decisões relevantes do projeto. Documentos especializados podem detalhar assuntos específicos, mas não devem contradizer as definições estabelecidas aqui sem que a alteração seja registrada.
 
 Toda mudança estrutural, arquitetural ou tecnológica relevante deverá ser documentada antes ou durante sua implementação, conforme o processo definido no repositório.
+
+## Prioridade da etapa atual: TCC
+
+O objetivo atual é implementar, testar, documentar e demonstrar o MVP com dados fictícios em ambiente local reproduzível. A base de código já foi integrada à main; sua existência não substitui a revisão dos fluxos, das telas e das evidências do TCC. Consulte o [estado de implementação](../product/implementation-status.md).
+
+Hospedagem pública, uso com usuários reais e contratação de provedores de e-mail, identidade ou armazenamento ficam para avaliação após o TCC. A autenticação é própria da aplicação; a demonstração de e-mail pode usar captura SMTP local, cuja configuração ainda precisa ser documentada e validada.
 
 ## 1.1 O que é o ORDIA
 
@@ -198,13 +205,13 @@ Nenhum módulo deverá ser considerado concluído enquanto seu comportamento Mul
 
 # 7. Tecnologias oficiais
 
-A stack oficial definida para o projeto é:
+A stack atual do MVP é descrita abaixo. O alinhamento das previsões iniciais está registrado no [ADR-0003](../decisions/ADR-0003-tcc-first.md).
 
 ## 7.1 Frontend
 
 - **SvelteKit**
 - **TypeScript**
-- **Tailwind CSS**
+- **CSS próprio responsivo** no MVP atual. Tailwind CSS era uma previsão inicial e não é dependência nem requisito da entrega do TCC.
 
 ## 7.2 Backend
 
@@ -221,7 +228,7 @@ A possibilidade de utilização futura de PostgreSQL ou MongoDB poderá ser aval
 
 ## 7.4 Cache
 
-- **Redis**
+- O MVP usa **MySQL** para estado compartilhado de sessões e limites de tentativas. **Redis** é uma opção futura condicionada a necessidade comprovada.
 
 ## 7.5 Documentação de API
 
@@ -230,7 +237,8 @@ A possibilidade de utilização futura de PostgreSQL ou MongoDB poderá ser aval
 
 ## 7.6 Armazenamento
 
-- **Amazon S3 ou armazenamento compatível com S3**
+- O MVP persiste anexos e exportações criptografados no **MySQL**, conforme [ADR-0002](../decisions/ADR-0002-private-content-mvp.md).
+- **S3 ou armazenamento compatível** é uma evolução futura; não é necessário contratar serviço para o TCC.
 
 ## 7.7 Regra da stack
 
@@ -433,60 +441,34 @@ O Documento Mestre não deverá acumular cada detalhe técnico. Quando uma decis
 
 ---
 
-# 14. Roadmap inicial
+# 14. Roadmap por etapa
 
-## Fase 1. Fundação
+O roadmap separa código integrado, validação acadêmica e evolução do produto. A integração não declara todas as atividades concluídas.
 
-- [x] Definir identidade do projeto como ORDIA
-- [x] Estruturar repositório
-- [x] Estruturar documentação
-- [ ] Consolidar requisitos do produto
-- [ ] Consolidar Documento Mestre
+## Etapa 1 · Base integrada
 
-## Fase 2. Arquitetura
+- [x] Repositórios separados para aplicação privada e documentação pública.
+- [x] Regras do núcleo, matriz de acesso, decisões e contrato da API documentados.
+- [x] Backend, frontend, banco, migrations e CI integrados à main.
+- [x] Identidade, organizações, membros, pacientes, recursos, agenda, arquivos, relatórios e auditoria implementados na base integrada.
 
-- [ ] Definir arquitetura geral
-- [ ] Definir modelo de domínio
-- [ ] Definir estratégia Multi-Tenant detalhada
-- [ ] Definir autenticação
-- [ ] Definir autorização
-- [ ] Definir RBAC/permissões
-- [ ] Definir padrões de API
-- [ ] Definir modelo de dados
-- [ ] Definir estratégia de arquivos
-- [ ] Definir observabilidade
+## Etapa 2 · Consolidação para o TCC
 
-## Fase 3. Fundação técnica
+- [ ] Revisar a implementação contra as regras e os cenários de aceite.
+- [ ] Detalhar mapa de telas, navegação, campos, ações e estados da interface.
+- [ ] Produzir e aprovar protótipos e acabamento visual, incluindo responsividade.
+- [ ] Documentar e validar execução local, captura de e-mail e dependências de arquivos.
+- [ ] Preparar dados fictícios e roteiro reproduzível de demonstração.
+- [ ] Consolidar evidências de testes, limitações e material acadêmico conforme orientação da instituição.
 
-- [ ] Estruturar backend
-- [ ] Estruturar frontend
-- [ ] Configurar banco de dados
-- [ ] Configurar Redis
-- [ ] Configurar armazenamento S3 ou compatível
-- [ ] Configurar ambientes
-- [ ] Configurar CI/CD
+## Etapa 3 · Após o TCC
 
-## Fase 4. Primeiro produto funcional
+- Avaliar hospedagem, e-mail externo e operação com usuários reais.
+- Validar chaves, HTTPS, monitoramento, backup/restauração e políticas de retenção no ambiente escolhido.
+- Avaliar Redis e object storage somente quando necessários, com decisão registrada.
+- Especificar financeiro, notificações e integrações externas antes de implementá-los.
 
-- [ ] Autenticação
-- [ ] Gestão de organizações
-- [ ] Gestão de usuários
-- [ ] Permissões
-- [ ] Primeiro módulo de negócio
-- [ ] Auditoria básica
-- [ ] Documentação da API
-
-## Fase 5. Evolução
-
-- [ ] Expansão dos módulos de negócio
-- [ ] Relatórios
-- [ ] Financeiro
-- [ ] Arquivos
-- [ ] Observabilidade avançada
-- [ ] Otimizações de performance
-- [ ] Escalabilidade horizontal conforme necessidade
-
-O roadmap é evolutivo e poderá ser alterado mediante novas decisões de produto e engenharia.
+Consulte o [MVP](../product/mvp.md) para os limites funcionais e o [estado de implementação](../product/implementation-status.md) para a distinção entre implementação, validação e operação.
 
 ---
 
@@ -519,7 +501,7 @@ Esta versão preserva os fundamentos do documento original, ao mesmo tempo em qu
 
 ## 16.1 Próxima evolução documental
 
-As próximas versões deverão aprofundar principalmente:
+A base dos assuntos abaixo já possui documentos especializados. As próximas revisões devem mantê-los coerentes com o código e completar o detalhamento de telas, fluxos e evidências do TCC:
 
 - Requisitos funcionais detalhados.
 - Modelo de domínio.

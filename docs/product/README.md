@@ -31,6 +31,6 @@ Esta área transforma a visão do Documento Mestre em requisitos, casos de uso, 
 
 ## Estado
 
-**Fase 2 · Definição do produto**
+O núcleo foi implementado e integrado à main. A etapa atual é consolidar a entrega do TCC: revisar regras e telas, detalhar navegação e estados da interface, validar execução local e reunir evidências. Consulte o [estado de implementação](implementation-status.md) e o [MVP](mvp.md).
 
-A base de requisitos, casos de uso, MVP e modelo de domínio está consolidada. As regras de **Identity & Access**, **Tenant & Organization**, **Pacientes**, **Agenda**, **Arquivos & Anexos**, **Relatórios & Exportações**, **Auditoria & Rastreabilidade**, **Profissionais & Recursos** e os limites iniciais de **Financeiro** foram detalhados. A matriz de permissões, as decisões do MVP e os cenários de aceite estão consolidados. A Fase 2 está pronta para a Fase 3, sem que isso autorize o início de implementação neste momento.
+Financeiro, notificações gerais e integrações externas permanecem futuros. Produção será avaliada após o TCC.

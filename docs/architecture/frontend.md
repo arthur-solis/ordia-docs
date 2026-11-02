@@ -1,5 +1,5 @@
 # Frontend
-A versão candidata usa SvelteKit 3, Svelte 5, TypeScript e servidor Node 24, com CSS próprio responsivo.
+A base integrada usa SvelteKit 3, Svelte 5, TypeScript e servidor Node 24, com CSS próprio responsivo.
 A interface inclui login/cadastro/recuperação, pacientes, recursos e disponibilidade, agenda, equipe, relatórios/exportações, auditoria e configuração da instituição.
 
 ## Segurança
@@ -10,5 +10,5 @@ Fusos são apresentados pela instituição; horários inexistentes/ambíguos por
 
 ## Validação
 Typecheck, build e Playwright em CI. Testes de interface usam servidor fictício isolado com dados demonstrativos.
-Os testes HTTP com MySQL verificam os serviços de domínio; o ambiente implantado ainda requer smoke test conjunto.
-A prévia de telas e a aprovação de produção são etapas separadas da compilação.
+Os testes HTTP com MySQL verificam os serviços de domínio; há fluxo de navegador com API real na validação da integração. O ambiente local da apresentação ainda precisa ser executado e conferido.
+Para o TCC ainda é necessário revisar o mapa de telas, os campos/ações, os estados de interface e os protótipos; a compilação não representa aprovação visual. A demonstração ocorre localmente com dados fictícios. Produção será avaliada após o TCC.

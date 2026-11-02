@@ -1,6 +1,6 @@
 # MVP do ORDIA
 
-Definição do primeiro produto implementável do ORDIA.
+Definição do núcleo do ORDIA para o TCC. A base já está integrada à main; as prioridades abaixo organizam a revisão e a demonstração, sem afirmar conclusão acadêmica.
 
 ## 1. Objetivo do MVP
 
@@ -42,11 +42,12 @@ A ordem considera:
 - arquivos/anexos;
 - dashboard operacional básico;
 - relatórios básicos;
-- notificações simples, se necessárias ao fluxo validado.
+- recuperação de acesso e convites, com possibilidade de captura de e-mail local para demonstração.
 
 ## 4. Fora do MVP
 
-- financeiro completo;
+- todo o domínio financeiro, inclusive lançamentos simples;
+- notificações gerais e integrações externas de negócio;
 - faturamento complexo;
 - integrações externas extensas;
 - aplicativo mobile nativo;
@@ -106,7 +107,9 @@ Deve existir, no mínimo:
 - configuração reproduzível do ambiente;
 - documentação atualizada.
 
-## 7. Sequência de implementação
+## 7. Sequência de referência para implementação e revisão
+
+A base dessas etapas já foi integrada. Use a sequência para estudar, revisar e validar os módulos; não representa uma lista de desenvolvimento ainda não iniciado. Hospedagem e operação externa são etapas posteriores ao TCC.
 
 ### Sprint 0 · Base
 
@@ -151,12 +154,12 @@ Deve existir, no mínimo:
 
 - dashboard básico;
 - auditoria;
-- arquivos, se necessários;
+- validação dos arquivos/anexos já implementados;
 - testes de integração;
 - UX;
 - segurança;
 - documentação;
-- preparação para staging.
+- preparação do ambiente local e roteiro de apresentação do TCC.
 
 ## 8. Métrica de sucesso inicial
 

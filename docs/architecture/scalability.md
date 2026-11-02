@@ -1,6 +1,10 @@
 # Escalabilidade
 
-## Estratégia inicial
+## Estratégia futura, após validação do núcleo
+
+Esta página descreve possibilidades de evolução. O TCC usa ambiente local; múltiplas instâncias, balanceador, Redis e S3 não são requisitos da entrega acadêmica nem componentes obrigatórios do MVP atual.
+
+## Estratégia de evolução
 
 O ORDIA será projetado para escalar horizontalmente o backend quando necessário, mantendo a aplicação o mais stateless possível.
 

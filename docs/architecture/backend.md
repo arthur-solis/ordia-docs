@@ -7,8 +7,8 @@
 - Spring Security
 - JWT
 - MySQL
-- Redis
-- S3 ou armazenamento compatível
+- MySQL também para estado compartilhado e conteúdo privado criptografado no MVP
+- Redis e S3/compatível: opções futuras, sem dependência obrigatória para o TCC
 
 ## Organização por domínio
 
@@ -85,8 +85,8 @@ A camada `infrastructure` implementa detalhes técnicos necessários pela aplica
 Exemplos:
 
 - Repositórios MySQL
-- Configuração Redis
-- Clientes S3
+- Persistência criptografada de conteúdo no MySQL (MVP)
+- Adaptadores de cache/object storage, se adotados futuramente
 - Integrações externas
 - Implementações de interfaces do domínio
 

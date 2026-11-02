@@ -171,7 +171,7 @@ File
 - created_at
 ```
 
-O objeto físico fica no armazenamento S3/compatível. O domínio mantém o vínculo e os metadados necessários.
+No MVP, o conteúdo fica criptografado no MySQL, conforme [ADR-0002](../decisions/ADR-0002-private-content-mvp.md). O domínio mantém vínculo e metadados; S3/compatível é evolução futura.
 
 ## 11. AuditEvent
 
