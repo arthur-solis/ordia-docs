@@ -24,3 +24,5 @@ ADR-0002-outra-decisao.md
 As decisões devem ser numeradas e não devem ser apagadas quando forem substituídas. Uma decisão antiga deve ser marcada como **Superseded** quando uma nova decisão assumir seu lugar.
 
 - [ADR-0002 · Conteúdo privado no MVP](ADR-0002-private-content-mvp.md)
+
+- [ADR-0003 · Prioridade do TCC e stack da base integrada](ADR-0003-tcc-first.md)

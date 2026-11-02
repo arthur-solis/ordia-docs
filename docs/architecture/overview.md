@@ -26,27 +26,8 @@ A distribuição física em múltiplos serviços poderá ocorrer futuramente, ma
 ## Fluxo principal
 
 ```text
-Cliente
-  │
-  │ HTTPS
-  ▼
-SvelteKit
-  │
-  │ REST / JSON
-  ▼
-Spring Boot API
-  │
-  ├── Identity
-  ├── Tenancy
-  ├── Patients
-  ├── Scheduling
-  ├── Billing
-  ├── Reporting
-  └── Files
-  │
-  ├───────────────┬───────────────┐
-  ▼               ▼               ▼
-MySQL           Redis       S3 / Compatível
+Navegador → SvelteKit → API Spring Boot → MySQL
+               UI       regras/segurança   dados e conteúdo criptografado
 ```
 
 ## Fronteiras
@@ -90,3 +71,9 @@ As dependências concretas devem ser controladas para evitar que detalhes de inf
 A arquitetura deve permitir que módulos com fronteiras maduras sejam extraídos posteriormente sem exigir uma reconstrução completa da aplicação.
 
 A extração de serviços será tratada como decisão arquitetural independente e registrada em ADR quando ocorrer.
+
+## Recorte do TCC e evolução
+
+O diagrama representa o MVP atual: identidade, organizações/membros, pacientes, recursos, agenda, arquivos, relatórios e auditoria. Financeiro é futuro. Redis e S3/compatível não são dependências da implementação atual. Consulte a [decisão de conteúdo privado](../decisions/ADR-0002-private-content-mvp.md).
+
+A prioridade é a demonstração local com dados fictícios. Hospedagem externa e operação em produção serão avaliadas após o TCC.

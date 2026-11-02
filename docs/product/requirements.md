@@ -1,6 +1,14 @@
 # Requisitos Funcionais
 
-Definição inicial dos requisitos funcionais do ORDIA.
+Requisitos funcionais do ORDIA, classificados por etapa.
+
+## Escopo da entrega do TCC
+
+O núcleo abrange identidade/sessão, organização/membros, autorização, pacientes, profissionais/recursos e disponibilidade, agenda, anexos, relatórios/exportações e auditoria. A implementação integrada deve ser revisada contra as regras e os critérios de aceite.
+
+Os RF-FIN-01 a RF-FIN-04 são **futuros, fora do TCC/MVP atual**. Notificações gerais e integrações de negócio externas também ficam fora. Captura local dos e-mails de recuperação/convite pertence aos fluxos de identidade e não amplia esse escopo.
+
+Hospedagem pública e contratação de provedores não são critérios de conclusão do TCC. Consulte [MVP](mvp.md) e [estado de implementação](implementation-status.md).
 
 ## 1. Objetivo
 
@@ -18,7 +26,7 @@ Transformar a visão do Documento Mestre em comportamentos verificáveis do prod
 | ACT-06 | Auditor/Consulta | Acessa informações conforme escopo somente leitura |
 | ACT-07 | Administrador da plataforma | Opera funções globais da plataforma, fora do escopo do Tenant comum |
 
-Os papéis são uma proposta inicial. O modelo definitivo de permissões será refinado durante o desenho do domínio.
+Para o núcleo do TCC, a referência vigente é a [matriz de acesso](access-control.md). ACT-05 (Financeiro) e ACT-07 (Administrador da plataforma) são atores futuros e não implicam telas ou funções na entrega atual.
 
 ## 3. Requisitos por domínio
 
@@ -56,7 +64,7 @@ Os papéis são uma proposta inicial. O modelo definitivo de permissões será r
 
 **RF-PAT-04** O sistema deve manter histórico mínimo de alterações relevantes quando exigido pelo domínio.
 
-**RF-PAT-05** O sistema deve evitar duplicidade indevida de pacientes conforme regras de negócio a serem definidas.
+**RF-PAT-05** O sistema deve evitar duplicidade indevida de pacientes conforme DEC-MVP-006 e as regras de negócio de pacientes.
 
 **RF-PAT-06** O acesso aos dados de pacientes deve respeitar permissões e contexto do Tenant.
 
@@ -72,7 +80,7 @@ Os papéis são uma proposta inicial. O modelo definitivo de permissões será r
 
 **RF-AGE-05** O sistema deve reduzir conflitos de agenda por meio de validações de disponibilidade.
 
-### 3.5 Financeiro
+### 3.5 Financeiro · Futuro, fora do TCC/MVP
 
 **RF-FIN-01** Usuários autorizados devem poder registrar informações financeiras suportadas pelo produto.
 
@@ -139,6 +147,7 @@ A princípio, não fazem parte do primeiro incremento obrigatório:
 - marketplace;
 - integrações com dezenas de sistemas externos;
 - automações avançadas sem caso de uso validado;
-- funcionalidades financeiras complexas que dependam de requisitos ainda não definidos.
+- todo o domínio financeiro (RF-FIN-01 a RF-FIN-04), incluindo operações simples;
+- notificações gerais e integrações externas de negócio.
 
 Esses itens podem entrar futuramente mediante priorização.

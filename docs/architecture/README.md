@@ -11,27 +11,8 @@ A arquitetura deve privilegiar simplicidade operacional, baixo acoplamento, segu
 ## Visão geral
 
 ```text
-┌──────────────────────────────────────────────┐
-│                  Cliente                     │
-│ Desktop · Notebook · Tablet · Smartphone     │
-└──────────────────────┬───────────────────────┘
-                       │ HTTPS
-                       ▼
-┌──────────────────────────────────────────────┐
-│              SvelteKit Frontend              │
-│       UI · Rotas · Estado · API Client       │
-└──────────────────────┬───────────────────────┘
-                       │ REST / JSON
-                       ▼
-┌──────────────────────────────────────────────┐
-│          ORDIA API · Spring Boot             │
-│                                              │
-│ Identity │ Tenancy │ Patients │ Scheduling   │
-│ Billing  │ Reporting │ Files │ Shared        │
-└───────┬──────────────┬───────────────┬───────┘
-        │              │               │
-        ▼              ▼               ▼
-     MySQL           Redis       S3 / compatível
+Navegador → SvelteKit → API Spring Boot → MySQL
+               UI       regras/segurança   dados e conteúdo criptografado
 ```
 
 ## Camadas do backend
@@ -151,7 +132,7 @@ O Redis não deve ser utilizado como substituto do banco de dados transacional s
 
 ## Armazenamento
 
-Arquivos e objetos binários devem utilizar **S3 ou armazenamento compatível**, mantendo no banco apenas os metadados necessários.
+No MVP, arquivos e exportações são persistidos criptografados no **MySQL**, junto de seus metadados, conforme [ADR-0002](../decisions/ADR-0002-private-content-mvp.md). **S3 ou armazenamento compatível** é uma evolução futura que exige migração planejada.
 
 O acesso aos objetos deve respeitar o tenant e as permissões do usuário.
 
@@ -272,3 +253,9 @@ A escolha do Modular Monolith como arquitetura inicial está registrada em:
 - [Modelo físico do MVP](data-model-mvp.md)
 - [Estratégia de migrations](migrations.md)
 - [Decisões Arquiteturais](../decisions/README.md)
+
+## Recorte do TCC e evolução
+
+O diagrama representa o MVP atual: identidade, organizações/membros, pacientes, recursos, agenda, arquivos, relatórios e auditoria. Financeiro é futuro. Redis e S3/compatível não são dependências da implementação atual. Consulte a [decisão de conteúdo privado](../decisions/ADR-0002-private-content-mvp.md).
+
+A prioridade é a demonstração local com dados fictícios. Hospedagem externa e operação em produção serão avaliadas após o TCC.

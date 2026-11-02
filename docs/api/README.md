@@ -1,5 +1,5 @@
 # API
-Contrato da versão candidata 0.2. A entrega depende da aprovação e implantação da PR de remediação; a branch main pode conter uma versão anterior.
+Contrato 0.2 da base integrada à main. A disponibilidade em execução depende do ambiente e das dependências configuradas. Para o TCC, a referência é a demonstração local com dados fictícios; produção fica para depois.
 
 ## Fontes
 - [OpenAPI](openapi-mvp.yaml): rotas, entradas, respostas e permissões.

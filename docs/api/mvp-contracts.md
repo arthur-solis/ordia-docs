@@ -1,6 +1,6 @@
 # Contratos REST do MVP
 
-Catálogo inicial de endpoints do MVP. O contrato 0.2 acompanha a implementação candidata da PR de remediação. Verifique a versão implantada antes do uso.
+Catálogo inicial de endpoints do MVP. O contrato 0.2 acompanha a implementação integrada à main. Verifique a versão e a configuração do ambiente local antes da demonstração.
 
 ## Convenções
 

@@ -1,5 +1,5 @@
 # ADR-0002 · Conteúdo privado no MVP
-- Estado: proposto na remediação de novembro/2026.
+- Estado: adotado na implementação integrada à main em 01/11/2026.
 - Contexto: arquivos de até 10 MB e exportações precisam de consistência com metadados, auditoria e isolamento sem depender de provedor já contratado.
 - Decisão: a primeira entrega mantém o conteúdo criptografado no MySQL. AES-256-GCM usa chave externa de 32 bytes, nonce aleatório e contexto autenticado com Tenant/ID/proprietário.
 - Upload exige MIME/extensão coerentes, validação estrutural e resposta limpa do antimalware ClamAV. Sem scanner ou chave, o serviço não aceita o upload.

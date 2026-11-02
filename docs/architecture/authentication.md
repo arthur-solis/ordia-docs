@@ -1,5 +1,5 @@
 # Autenticação
-Referência da implementação candidata 0.2.
+Referência da implementação 0.2 integrada à main. A autenticação é própria da aplicação; não exige contratação de provedor externo para o TCC.
 
 ## Identidade e sessão
 Access JWT de até 15 minutos; refresh de até 30 dias em família, sem renovação além da expiração original.

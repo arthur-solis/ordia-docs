@@ -1,6 +1,8 @@
 # Casos de Uso
 
-Casos de uso prioritários do ORDIA, derivados dos requisitos funcionais iniciais.
+Casos de uso do ORDIA. UC-01 a UC-07 e UC-09 a UC-12 integram o núcleo do TCC; UC-08 é futuro. A implementação deve seguir também as [decisões do MVP](mvp-decisions.md), a [matriz de acesso](access-control.md) e os [cenários de aceite](acceptance-criteria.md).
+
+O catálogo descreve comportamentos e não substitui o detalhamento de telas. A demonstração usa dados fictícios e ambiente local; contratação de provedores externos não é pré-requisito acadêmico.
 
 ## UC-01 · Autenticar usuário
 
@@ -43,7 +45,7 @@ Casos de uso prioritários do ORDIA, derivados dos requisitos funcionais iniciai
 
 1. Administrador abre gerenciamento de usuários.
 2. Sistema apresenta somente usuários do escopo permitido.
-3. Administrador cria, altera, ativa, desativa ou ajusta acesso.
+3. Administrador convida um membro ou ajusta perfis/estado de um vínculo existente, respeitando a aceitação do convite e a proteção do último administrador.
 4. Sistema valida permissões.
 5. Sistema registra alterações relevantes.
 
@@ -105,7 +107,7 @@ Casos de uso prioritários do ORDIA, derivados dos requisitos funcionais iniciai
 5. Sistema atualiza o agendamento.
 6. Sistema registra evento/auditoria quando aplicável.
 
-## UC-08 · Registrar operação financeira
+## UC-08 · Registrar operação financeira · Futuro, fora do TCC/MVP
 
 **Ator:** financeiro ou usuário autorizado
 
@@ -164,7 +166,7 @@ Casos de uso prioritários do ORDIA, derivados dos requisitos funcionais iniciai
 
 ## UC-12 · Trocar contexto organizacional
 
-**Ator:** usuário vinculado a mais de um Tenant, caso essa capacidade seja habilitada.
+**Ator:** usuário com vínculo ativo em mais de um Tenant ativo.
 
 **Objetivo:** operar em outro contexto permitido sem misturar dados.
 

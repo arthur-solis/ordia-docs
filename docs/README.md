@@ -22,5 +22,5 @@ A documentação oficial do ORDIA fica centralizada nesta pasta.
 
 ## Estado atual
 
-A documentação 0.2 descreve a implementação candidata da PR de remediação. A main e a versão implantada podem conter uma versão anterior. O código e os testes permanecem privados.
+A documentação descreve o MVP integrado à main, com prioridade para execução local, revisão e demonstração do TCC. O código e os testes permanecem privados. Integração não significa implantação em produção.
 Consulte o [estado de implementação](product/implementation-status.md) e a [decisão de conteúdo privado](decisions/ADR-0002-private-content-mvp.md).
