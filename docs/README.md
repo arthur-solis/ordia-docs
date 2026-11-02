@@ -22,7 +22,5 @@ A documentação oficial do ORDIA fica centralizada nesta pasta.
 
 ## Estado atual
 
-O código da aplicação é mantido no repositório privado `ordia-application`.
-Esta documentação reúne decisões e especificações; funcionalidades planejadas não devem ser interpretadas como já entregues.
-Há implementação de backend com criação de Tenant, autenticação JWT, validação de Membership e autorização por permissões no escopo do Tenant, além de testes de integração.
-Refresh/logout, recuperação de senha e outras funcionalidades descritas permanecem sujeitas à implementação e validação.
+A documentação 0.2 descreve a implementação candidata da PR de remediação. A main e a versão implantada podem conter uma versão anterior. O código e os testes permanecem privados.
+Consulte o [estado de implementação](product/implementation-status.md) e a [decisão de conteúdo privado](decisions/ADR-0002-private-content-mvp.md).

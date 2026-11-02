@@ -1,6 +1,6 @@
 # Contratos REST do MVP
 
-Catálogo inicial de endpoints do MVP. É uma definição de contrato para orientar OpenAPI e implementação; não representa endpoints já disponíveis.
+Catálogo inicial de endpoints do MVP. O contrato 0.2 acompanha a implementação candidata da PR de remediação. Verifique a versão implantada antes do uso.
 
 ## Convenções
 
@@ -8,16 +8,16 @@ Catálogo inicial de endpoints do MVP. É uma definição de contrato para orien
 - Endpoints protegidos exigem `Authorization: Bearer <access-token>`.
 - Tenant Context vem do token validado no backend.
 - IDs enviados pelo cliente nunca substituem validação de Tenant, Membership e permission.
-- Formato de erro segue [padrão da API](README.md#9-erros).
+- Formato de erro segue [padrão da API](README.md#status).
 - Listagens usam `page` e `pageSize`, com limite de `100`.
 
 ## Identity & sessão
 
 | Método e rota | Permission | Resultado |
 |---|---|---|
-| `POST /auth/login` | pública | Credenciais válidas retornam access e refresh token. |
+| `POST /auth/login` | pública | Credenciais válidas retornam access e refresh token rotacionável. |
 | `POST /auth/refresh` | refresh válido | Rotaciona tokens. |
-| `POST /auth/logout` | autenticado | Invalida refresh token atual. |
+| `POST /auth/logout` | autenticado | Revoga família da sessão e seus access/refresh tokens. |
 | `POST /auth/password-recovery` | pública | Resposta não enumerável. |
 | `POST /auth/password-reset` | token de recuperação | Redefine senha e invalida sessões de renovação. |
 | `POST /auth/switch-tenant` | Membership ativa no destino | Emite novo par de tokens no Tenant escolhido. |
@@ -78,10 +78,11 @@ Catálogo inicial de endpoints do MVP. É uma definição de contrato para orien
 | Situação | HTTP |
 |---|---:|
 | Credencial ausente, inválida ou expirada | 401 |
-| Membership, Tenant ou permission insuficiente | 403 |
+| Sessão inativa por User, Membership ou Tenant | 401 |
+| Permission insuficiente | 403 |
 | Recurso fora do Tenant/escopo ou inexistente | 404 |
 | Conflito de agenda, transição ou último administrador | 409 |
-| Validação de entrada | 400 ou 422 |
+| Validação de entrada | 422 |
 | Limite de login, recuperação ou exportação | 429 |
 
 ## Contrato verificável

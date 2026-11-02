@@ -1,30 +1,10 @@
 # Autorização
+Permissões são resolvidas no Membership ativo e no Tenant Context validado. Não há papel transversal no MVP.
+O administrador inicial recebe TENANT_ADMIN na mesma transação da criação da instituição.
 
-## Fonte de verdade
+A versão candidata aplica permissões às operações de Patient, Resource, Appointment, File, Report, Audit e Membership.
+Cada operação usa escopo de Tenant em consultas e mutações. Arquivos exigem também leitura do proprietário; relatórios/exportações exigem leitura da fonte.
+Downloads revalidam sessão e permissões, inclusive após suspensão ou revogação.
+A última capacidade administrativa ativa não pode ser removida/suspensa/revogada pela API. Alterações são serializadas por instituição e auditadas.
 
-A [Matriz de Acesso do MVP](../product/access-control.md) define roles e permissions. As [Regras de negócio](../product/business-rules.md) definem os estados e o isolamento.
-
-## Modelo
-
-O MVP usa RBAC por Tenant:
-
-```text
-User → Membership ativa no Tenant → Roles → Permissions → recurso do Tenant
-```
-
-Roles iniciais: `TENANT_ADMIN`, `MANAGER`, `PROFESSIONAL`, `RECEPTION`, `FINANCE` e `AUDITOR`. Não existem roles customizáveis no MVP.
-
-## Decisão por requisição
-
-1. autenticar a credencial;
-2. resolver o Tenant Context validado;
-3. confirmar User, Tenant e Membership ativos;
-4. exigir a permission da matriz;
-5. limitar a consulta/comando ao Tenant;
-6. aplicar regra específica do recurso.
-
-Ocultar controles no frontend não concede nem revoga acesso.
-
-## Escopo e auditoria
-
-O escopo obrigatório no MVP é o Tenant. Escopos por unidade, proprietário ou recurso são evolução futura e exigem decisão registrada. Mudanças de Membership, roles e permissões, além de ações sensíveis, são auditadas sem incluir segredos.
+Consulte a [matriz de acesso](../product/access-control.md) e os [cenários de aceite](../product/acceptance-criteria.md).
