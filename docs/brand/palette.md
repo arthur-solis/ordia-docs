@@ -5,6 +5,11 @@ Em 05/11/2026, o autor aprovou como base da paleta a segunda prévia do painel, 
 
 A direção aprovada combina **azul profundo, azul tecnológico e turquesa**, com fundos claros e textos escuros. A aprovação define a família cromática e a linguagem geral; não define ainda códigos HEX/RGB, tipografia ou medidas finais.
 
+## Prévia visual aprovada
+![Prévia conceitual do painel ORDIA com a direção cromática aprovada e dados fictícios](ordia-painel-paleta-aprovada.png)
+
+A imagem gerada ilustra a direção aprovada. Não é arquivo mestre da logo nem definição exata de cores.
+
 ## Papéis das cores
 | Família | Uso de referência |
 |---|---|
