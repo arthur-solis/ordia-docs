@@ -6,6 +6,10 @@ Esta área transforma a visão do Documento Mestre em requisitos, casos de uso, 
 
 ## Documentos
 
+- [Cenário hospitalar e visão do produto](hospital-scope.md)
+- [Perfis hospitalares e responsabilidades](hospital-user-profiles.md)
+- [Mapa inicial de telas e navegação](screen-map-navigation.md)
+
 - [Requisitos Funcionais](requirements.md)
 - [Casos de Uso](use-cases.md)
 - [MVP](mvp.md)
@@ -25,7 +29,7 @@ Esta área transforma a visão do Documento Mestre em requisitos, casos de uso, 
 6. **Relatórios & Exportações** — definido: consultas agregadas, escopo, geração e entrega segura.
 7. **Auditoria & Rastreabilidade** — definido: eventos, consulta segura, integridade e retenção.
 8. **Profissionais & Recursos** — definido: capacidade, disponibilidade, estados e uso na Agenda.
-9. **Financeiro** — definido como domínio futuro: lançamentos, estados, estornos e rastreabilidade.
+9. **Financeiro** — incluído na visão hospitalar; implementação a planejar: lançamentos, estados, estornos e rastreabilidade.
 10. **Notificações** — definido como domínio futuro: preferências, canais, entrega e privacidade.
 11. **Integrações Externas** — definido como domínio futuro: provedores, webhooks, sincronização e falhas.
 
@@ -33,4 +37,4 @@ Esta área transforma a visão do Documento Mestre em requisitos, casos de uso, 
 
 O núcleo foi implementado e integrado à main. A etapa atual é consolidar a entrega do TCC: revisar regras e telas, detalhar navegação e estados da interface, validar execução local e reunir evidências. Consulte o [estado de implementação](implementation-status.md) e o [MVP](mvp.md).
 
-Financeiro, notificações gerais e integrações externas permanecem futuros. Produção será avaliada após o TCC.
+A visão agora abrange gestão hospitalar administrativa e assistencial, incluindo financeiro/faturamento. A base implementada é um subconjunto; requisitos completos e recorte de demonstração do TCC serão definidos progressivamente. Notificações gerais e integrações externas continuam sem implementação planejada nesta etapa. Produção será avaliada após o TCC.

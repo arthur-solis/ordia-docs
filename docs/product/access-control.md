@@ -1,5 +1,9 @@
 # Matriz de Acesso do MVP
 
+## Ampliação hospitalar aprovada
+A [visão hospitalar](hospital-scope.md) amplia o planejamento para hospital geral privado, com convênios e particulares e acesso apenas de funcionários. Este documento descreve a base anterior; não especifica integralmente pronto-socorro, internação, prontuário, enfermagem, farmácia, exames, centro cirúrgico ou faturamento hospitalar. Financeiro integra a visão do produto; implementação e recorte demonstrável do TCC serão definidos por etapas.
+
+
 Catálogo inicial de permissões do ORDIA e composição das roles do MVP. Permissões são avaliadas no backend, sempre no Tenant Context e com Membership `ACTIVE`.
 
 ## 1. Convenções

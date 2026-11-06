@@ -24,3 +24,10 @@ A documentação oficial do ORDIA fica centralizada nesta pasta.
 
 A documentação descreve o MVP integrado à main, com prioridade para execução local, revisão e demonstração do TCC. O código e os testes permanecem privados. Integração não significa implantação em produção.
 Consulte o [estado de implementação](product/implementation-status.md) e a [decisão de conteúdo privado](decisions/ADR-0002-private-content-mvp.md).
+
+## Planejamento hospitalar aprovado
+- [Cenário: hospital geral privado, convênios e particulares](product/hospital-scope.md)
+- [Perfis de funcionários e responsabilidades](product/hospital-user-profiles.md)
+- [Mapa inicial de telas e navegação em ambiente único](product/screen-map-navigation.md)
+
+Os novos módulos são planejamento e não devem ser confundidos com a base já implementada.
