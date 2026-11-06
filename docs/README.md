@@ -24,3 +24,6 @@ A documentação oficial do ORDIA fica centralizada nesta pasta.
 
 A documentação descreve o MVP integrado à main, com prioridade para execução local, revisão e demonstração do TCC. O código e os testes permanecem privados. Integração não significa implantação em produção.
 Consulte o [estado de implementação](product/implementation-status.md) e a [decisão de conteúdo privado](decisions/ADR-0002-private-content-mvp.md).
+
+## Identidade visual
+Consulte as [diretrizes da marca](brand/README.md) e a [base da paleta aprovada](brand/palette.md). Os códigos exatos e tokens de componentes ainda serão definidos.

@@ -57,9 +57,9 @@ A composição deve preservar espaço suficiente entre símbolo e palavra e não
 
 ## 6. Cores
 
-A direção visual atual utiliza uma combinação de azul profundo, azul tecnológico e tons de teal/turquesa.
+Em 05/11/2026, foi aprovada a combinação de **azul profundo, azul tecnológico e turquesa**, com fundos claros e textos escuros, tendo como referência a marca Conceito Fusão e a segunda prévia do painel.
 
-Os valores exatos de cor deverão ser consolidados posteriormente em tokens oficiais de design para garantir consistência entre frontend, documentação e materiais externos.
+A família cromática está aprovada; os valores exatos de cor ainda deverão ser consolidados em tokens oficiais de design. Consulte a [paleta e direção visual aprovadas](palette.md) para papéis das cores, limites da prévia e pendências.
 
 ## 7. Versões
 
