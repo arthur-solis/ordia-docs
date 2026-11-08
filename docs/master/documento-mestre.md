@@ -1,10 +1,10 @@
 # Documento Mestre ORDIA
 
-**Versão:** 1.1.0
+**Versão:** 1.2.0
 **Status:** Em desenvolvimento  
 **Classificação:** Documento oficial  
 **Origem:** consolidação e adaptação do Documento Mestre original do projeto  
-**Última atualização:** 01/11/2026 (America/Cuiaba)
+**Última atualização:** 05/11/2026 (America/Cuiaba)
 
 ---
 
@@ -13,6 +13,7 @@
 | Versão | Data | Alteração |
 |---|---|---|
 | 1.0.0 | Setembro/2026 | Migração e reestruturação do Documento Mestre para o ORDIA |
+| 1.2.0 | 05/11/2026 | Cenário hospitalar privado, perfis funcionais, mapa inicial de telas e ambiente único aprovados; distinção entre visão e base implementada |
 | 1.1.0 | 01/11/2026 | Alinhamento à implementação integrada e à prioridade do TCC; distinção entre MVP e evolução futura |
 
 ---
@@ -51,6 +52,9 @@ Toda mudança estrutural, arquitetural ou tecnológica relevante deverá ser doc
 O objetivo atual é implementar, testar, documentar e demonstrar o MVP com dados fictícios em ambiente local reproduzível. A base de código já foi integrada à main; sua existência não substitui a revisão dos fluxos, das telas e das evidências do TCC. Consulte o [estado de implementação](../product/implementation-status.md).
 
 Hospedagem pública, uso com usuários reais e contratação de provedores de e-mail, identidade ou armazenamento ficam para avaliação após o TCC. A autenticação é própria da aplicação; a demonstração de e-mail pode usar captura SMTP local, cuja configuração ainda precisa ser documentada e validada.
+
+## Cenário aprovado nesta etapa
+O produto será planejado para hospital geral privado, com convênios e particulares, acesso somente por funcionários e ambiente único. SUS e portal do paciente ficam fora do cenário inicial. A visão abrange áreas administrativas e assistenciais, incluindo financeiro/faturamento, sem promessa de implementação integral até o TCC. Consulte o [cenário hospitalar](../product/hospital-scope.md), os [perfis](../product/hospital-user-profiles.md) e o [mapa inicial de telas/navegação](../product/screen-map-navigation.md).
 
 ## 1.1 O que é o ORDIA
 
@@ -455,7 +459,8 @@ O roadmap separa código integrado, validação acadêmica e evolução do produ
 ## Etapa 2 · Consolidação para o TCC
 
 - [ ] Revisar a implementação contra as regras e os cenários de aceite.
-- [ ] Detalhar mapa de telas, navegação, campos, ações e estados da interface.
+- [x] Aprovar cenário hospitalar, perfis funcionais e mapa inicial de telas com navegação em ambiente único.
+- [ ] Detalhar campos, ações, permissões, estados e rotas por módulo; o mapa aprovado não é especificação completa.
 - [ ] Produzir e aprovar protótipos e acabamento visual, incluindo responsividade.
 - [ ] Documentar e validar execução local, captura de e-mail e dependências de arquivos.
 - [ ] Preparar dados fictícios e roteiro reproduzível de demonstração.
@@ -466,7 +471,9 @@ O roadmap separa código integrado, validação acadêmica e evolução do produ
 - Avaliar hospedagem, e-mail externo e operação com usuários reais.
 - Validar chaves, HTTPS, monitoramento, backup/restauração e políticas de retenção no ambiente escolhido.
 - Avaliar Redis e object storage somente quando necessários, com decisão registrada.
-- Especificar financeiro, notificações e integrações externas antes de implementá-los.
+- Avaliar notificações gerais e integrações externas antes de implementá-las.
+
+Financeiro/faturamento e demais módulos hospitalares entram no planejamento progressivo atual. A ordem de implementação e a seleção demonstrável do TCC continuam pendentes, conforme [ADR-0004](../decisions/ADR-0004-hospital-scope-navigation.md).
 
 Consulte o [MVP](../product/mvp.md) para os limites funcionais e o [estado de implementação](../product/implementation-status.md) para a distinção entre implementação, validação e operação.
 

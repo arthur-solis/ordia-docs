@@ -43,6 +43,8 @@ Decisões de produto e segurança fechadas para permitir a implementação do n�
 - Possível duplicidade é alertada por documento normalizado quando presente; caso contrário, por nome normalizado + data de nascimento.
 - Duplicidade alerta, não bloqueia, e não há mesclagem no MVP.
 
+Para evolução hospitalar, consulte [DEC-HOSP-001 · Acesso](hospital-access.md) e [DEC-HOSP-002 · Pacientes](hospital-patients.md). A segunda decisão muda a regra planejada de documento no cadastro normal e prevê uma ficha provisória. Os requisitos novos ainda precisam ser implementados e validados.
+
 ## DEC-MVP-007 · Recursos e agenda
 
 - MVP suporta recursos `PROFESSIONAL`, `ROOM` e `EQUIPMENT`.
@@ -52,6 +54,8 @@ Decisões de produto e segurança fechadas para permitir a implementação do n�
 - Horário é armazenado em UTC; o Tenant define timezone de exibição.
 - Horários de trabalho e bloqueios são definidos por recurso; fora deles não há disponibilidade.
 - Cancelamento, confirmação, conclusão e ausência não exigem motivo no MVP, mas são auditados.
+
+A evolução hospitalar está detalhada em [DEC-HOSP-003 · Recursos](hospital-resources.md) e [DEC-HOSP-004 · Agenda](hospital-agenda.md), incluindo compartilhamento entre setores e divisão de responsabilidades.
 
 ## DEC-MVP-008 · Arquivos e exportações
 
