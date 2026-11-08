@@ -24,7 +24,7 @@ Direção aprovada em 05/11/2026. Este é o mapa da visão hospitalar; não é i
 | UI-18 | Auditoria | Consulta das ações registradas, conforme autorização |
 
 Um item pode ser aba, painel ou fluxo dentro de uma tela. Não existe obrigação de criar uma página para cada termo da tabela. A conta hospitalar, a alta clínica e a saída administrativa são conceitos distintos e exigem regras próprias a detalhar.
-O acesso inicial de criação de instituição/admin já existente na base permanece sujeito às regras de identidade; acesso cotidiano do funcionário ocorre por vínculo/convite autorizado. Não há portal do paciente.
+O [fluxo de acesso aprovado](hospital-access.md) atribui a criação da instituição e o convite inicial da TI ao operador do Ordia. A TI convida os demais funcionários. O [fluxo de Pacientes](hospital-patients.md) detalha busca e cadastro em UI-03 e o cadastro provisório em UI-05. O mapa é de uso interno por funcionários.
 
 ## NAV-01 · Ambiente único
 Um sistema e um login por sessão, com áreas disponíveis conforme função/permissões, setor e instituição. Administrativo e assistencial compartilham o ambiente; não haverá aplicações separadas para esses grupos nesta direção aprovada.

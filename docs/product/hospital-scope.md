@@ -41,7 +41,10 @@ Regras clínicas, responsabilidades profissionais e fluxos de convênio precisam
 | 2 · Perfis e responsabilidades | Base aprovada | [Perfis hospitalares](hospital-user-profiles.md); permissões por operação pendentes |
 | 3 · Mapa de telas | Mapa inicial aprovado | [Telas e navegação](screen-map-navigation.md); especificação por módulo pendente |
 | 4 · Navegação | Direção aprovada | Ambiente único com menus e painel conforme perfil/permissões, setor e instituição |
-| 5 · Identidade visual | Próxima etapa | Cores, tipografia, espaçamentos e componentes a revisar |
+| 5 · Identidade visual | Base cromática aprovada | Registro da paleta em revisão no PR #6. Códigos exatos e componentes pendentes |
+| 6 · Acesso ao sistema | Fluxo aprovado | [Operador, TI e convites](hospital-access.md) |
+| 7 · Pacientes | Fluxo aprovado | [Cadastro normal, CPF e ficha provisória](hospital-patients.md) |
+| 8 · Profissionais e recursos | Próxima etapa | Detalhar profissionais, salas, equipamentos e disponibilidade |
 
 ## Referências
 - [Perfis e responsabilidades](hospital-user-profiles.md)
