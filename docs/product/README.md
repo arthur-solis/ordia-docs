@@ -11,6 +11,9 @@ Esta área transforma a visão do Documento Mestre em requisitos, casos de uso, 
 - [Mapa inicial de telas e navegação](screen-map-navigation.md)
 - [Acesso ao Ordia](hospital-access.md)
 - [Cadastro e identificação de pacientes](hospital-patients.md)
+- [Profissionais e recursos](hospital-resources.md)
+- [Agenda](hospital-agenda.md)
+- [Equipe e permissões](hospital-team-permissions.md)
 
 - [Requisitos Funcionais](requirements.md)
 - [Casos de Uso](use-cases.md)

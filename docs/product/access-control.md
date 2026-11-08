@@ -71,6 +71,10 @@ Catálogo inicial de permissões do ORDIA e composição das roles do MVP. Permi
 - `TENANT_ADMIN` administra seu Tenant, sem acesso a qualquer outro Tenant.
 - `FINANCE` não acessa dados financeiros até que o domínio Financeiro seja implementado e a matriz seja ampliada.
 
+## Evolução hospitalar
+
+A [decisão sobre equipe e permissões](hospital-team-permissions.md) define as responsabilidades da TI e os escopos por instituição e setor para a evolução do hospital.
+
 ## Documentos relacionados
 
 - [Regras de Negócio](business-rules.md)

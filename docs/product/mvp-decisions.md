@@ -55,6 +55,8 @@ Para evolução hospitalar, consulte [DEC-HOSP-001 · Acesso](hospital-access.md
 - Horários de trabalho e bloqueios são definidos por recurso; fora deles não há disponibilidade.
 - Cancelamento, confirmação, conclusão e ausência não exigem motivo no MVP, mas são auditados.
 
+A evolução hospitalar está detalhada em [DEC-HOSP-003 · Recursos](hospital-resources.md) e [DEC-HOSP-004 · Agenda](hospital-agenda.md), incluindo compartilhamento entre setores e divisão de responsabilidades.
+
 ## DEC-MVP-008 · Arquivos e exportações
 
 - Tipos permitidos: PDF, JPEG e PNG.

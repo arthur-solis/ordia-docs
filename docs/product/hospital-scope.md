@@ -44,7 +44,10 @@ Regras clínicas, responsabilidades profissionais e fluxos de convênio precisam
 | 5 · Identidade visual | Base cromática aprovada | Registro da paleta em revisão no PR #6. Códigos exatos e componentes pendentes |
 | 6 · Acesso ao sistema | Fluxo aprovado | [Operador, TI e convites](hospital-access.md) |
 | 7 · Pacientes | Fluxo aprovado | [Cadastro normal, CPF e ficha provisória](hospital-patients.md) |
-| 8 · Profissionais e recursos | Próxima etapa | Detalhar profissionais, salas, equipamentos e disponibilidade |
+| 8 · Profissionais e recursos | Fluxo aprovado | [Disponibilidade e recursos compartilhados](hospital-resources.md) |
+| 9 · Agenda | Fluxo aprovado | [Reservas, remarcações e estados](hospital-agenda.md) |
+| 10 · Equipe e permissões | Fluxo aprovado | [Perfis por instituição e setor](hospital-team-permissions.md) |
+| 11 · Arquivos | Próxima etapa | Detalhar anexos, visualização, download e remoção |
 
 ## Referências
 - [Perfis e responsabilidades](hospital-user-profiles.md)
