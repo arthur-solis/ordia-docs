@@ -47,11 +47,15 @@ Ao retornar de um detalhe, preservar filtros e período da lista anterior quando
 - Rotas finais, hierarquia de páginas e relação entre abas/modais.
 - Campos, ações, validações e permissões por operação.
 - Regras de composição do painel para quem acumula perfis e seleção de setor.
-- Estados de carregamento, vazio, erro, conflito, sucesso e acesso negado.
-- Protótipos, acessibilidade, responsividade e validação dos fluxos.
+- Aplicar e validar os [comportamentos comuns](hospital-interface-behavior.md) já definidos: carregamento, vazio, erro, conflito, sucesso e acesso negado.
+- Completar os [protótipos em andamento](../prototypes/README.md), acessibilidade, responsividade e validação dos fluxos.
 - Priorização das telas que integrarão a entrega demonstrável do TCC.
 
 ## Referências
 - [Cenário hospitalar](hospital-scope.md)
 - [Perfis hospitalares](hospital-user-profiles.md)
 - [Estado do código](implementation-status.md)
+
+## Detalhamento posterior
+Painéis e seleção de área de trabalho: [configurações e visão geral](hospital-settings-dashboard.md). Paciente/atendimento/convênio/SP-SADT: [fluxo orientado a TISS](hospital-attendance-tiss.md). Consulte o [progresso](planning-progress.md) para distinguir decisões iniciais, imagens e implementação.
+

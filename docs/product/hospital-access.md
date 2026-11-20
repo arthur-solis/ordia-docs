@@ -12,7 +12,7 @@ O operador do Ordia e a TI atribuem acesso por convite. Cada pessoa é responsá
 
 ## Convite de funcionário
 
-1. Em **Equipe → Convidar funcionário**, a TI informa o e-mail e seleciona os perfis autorizados, como Recepção.
+1. Em **Equipe → Convidar funcionário**, a TI informa o e-mail e atribui pares explícitos de perfil e setor, como Recepção — Ambulatório. Cada linha corresponde a uma atribuição; não cruzar automaticamente todos os perfis e setores.
 2. O Ordia envia o link por e-mail e exibe o convite como **Pendente**. O vínculo ainda não autoriza acesso ao hospital.
 3. A pessoa abre o link, confere a instituição e aceita. Ela define a senha se estiver criando a primeira conta ou usa a senha existente se já tiver conta.
 4. O vínculo passa para **Ativo**. A pessoa pode entrar no painel com os acessos atribuídos.
@@ -31,3 +31,7 @@ O link é de uso único e tem prazo. A TI pode reenviar se expirar. A política 
 Preparar localmente um hospital fictício e o primeiro administrador da TI. Demonstrar a TI convidando alguém da recepção, a abertura do e-mail em uma caixa de teste local, a aceitação, a definição da senha e o primeiro login com o perfil de Recepção. Conferir se a pessoa acessa apenas as áreas autorizadas.
 
 Ficam para detalhamento a interface de provisionamento pelo operador e a configuração reproduzível da captura local de e-mails.
+
+## Protótipos do acesso
+Login, equipe, convite e aceite estão na [galeria](../prototypes/README.md). A retirada do link “Já tenho conta no Ordia” da prévia não altera o tratamento de quem já possui conta. Recuperação de senha, seleção de instituição, erros, expiração e entrega local ainda precisam de revisão/demonstração.
+

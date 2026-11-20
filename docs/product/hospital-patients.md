@@ -17,7 +17,7 @@ O fluxo de conferência e vinculação, os campos mínimos provisórios e as per
 ## Atualização e histórico
 
 - A recepção pode corrigir dados cadastrais e contatos conforme autorização. Evoluções, diagnósticos e prescrições ficam no prontuário, com permissões próprias.
-- Um perfil autorizado pode arquivar a ficha, preservando o histórico. Para um novo agendamento, a ficha precisa ser reativada.
+- Gestão de contas autorizada pode arquivar a ficha, preservando o histórico. A recepção não executa esse arquivamento. Para um novo agendamento, a ficha precisa ser reativada.
 - Convênio ou particular é registrado no atendimento. A mesma pessoa pode usar convênio em uma ocasião e pagar particular em outra, mantendo uma única ficha.
 
 ## Diferenças em relação à base integrada
@@ -31,3 +31,7 @@ A [decisão anterior do MVP](mvp-decisions.md#dec-mvp-006--patient-mínimo-e-dup
 - Atendimento vinculado a ficha provisória e histórico preservado após confirmação de identidade.
 - Paciente com um atendimento por convênio e outro particular usando a mesma ficha.
 - Ficha arquivada com histórico consultável por pessoa autorizada, sem novo agendamento até reativação.
+
+## Protótipos
+A [galeria](../prototypes/README.md) registra cadastro normal, alerta de duplicidade, cadastro provisório, lista, ficha e abertura de atendimento. As imagens não implementam regularização de identidade ou mesclagem. A relação paciente–atendimento e os limites de acesso seguem [atendimento/TISS](hospital-attendance-tiss.md).
+

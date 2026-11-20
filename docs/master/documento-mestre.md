@@ -1,10 +1,10 @@
 # Documento Mestre ORDIA
 
-**Versão:** 1.2.0
+**Versão:** 1.3.0
 **Status:** Em desenvolvimento  
 **Classificação:** Documento oficial  
 **Origem:** consolidação e adaptação do Documento Mestre original do projeto  
-**Última atualização:** 05/11/2026 (America/Cuiaba)
+**Última atualização:** 19/11/2026 (America/Cuiaba)
 
 ---
 
@@ -13,6 +13,7 @@
 | Versão | Data | Alteração |
 |---|---|---|
 | 1.0.0 | Setembro/2026 | Migração e reestruturação do Documento Mestre para o ORDIA |
+| 1.3.0 | 19/11/2026 | Etapas 11–14 consolidadas, responsabilidades revistas, galeria de protótipos e rastreabilidade ANS/TISS; sem nova comprovação de implementação |
 | 1.2.0 | 05/11/2026 | Cenário hospitalar privado, perfis funcionais, mapa inicial de telas e ambiente único aprovados; distinção entre visão e base implementada |
 | 1.1.0 | 01/11/2026 | Alinhamento à implementação integrada e à prioridade do TCC; distinção entre MVP e evolução futura |
 
@@ -55,6 +56,9 @@ Hospedagem pública, uso com usuários reais e contratação de provedores de e-
 
 ## Cenário aprovado nesta etapa
 O produto será planejado para hospital geral privado, com convênios e particulares, acesso somente por funcionários e ambiente único. SUS e portal do paciente ficam fora do cenário inicial. A visão abrange áreas administrativas e assistenciais, incluindo financeiro/faturamento, sem promessa de implementação integral até o TCC. Consulte o [cenário hospitalar](../product/hospital-scope.md), os [perfis](../product/hospital-user-profiles.md) e o [mapa inicial de telas/navegação](../product/screen-map-navigation.md).
+
+## Progresso documental e visual
+As definições iniciais das etapas 1 a 14 foram discutidas; a etapa 15 (protótipos) continua em andamento. Consulte o [roteiro](../product/planning-progress.md) e a [galeria](../prototypes/README.md). A visão hospitalar e seus protótipos não equivalem à base implementada. Gestão de contas executa cancelamentos de agenda e arquivamento de pacientes; TI suspende acessos. Recepção solicita e acompanha cancelamentos, sem execução direta. O [fluxo de atendimento e TISS](../product/hospital-attendance-tiss.md) separa atendimento interno, elegibilidade, autorização e cancelamento externo.
 
 ## 1.1 O que é o ORDIA
 
@@ -525,3 +529,4 @@ A base dos assuntos abaixo já possui documentos especializados. As próximas re
 ---
 
 > **Estado atual:** o Documento Mestre define a direção oficial do ORDIA. Detalhes de implementação deverão ser mantidos nos documentos especializados correspondentes.
+

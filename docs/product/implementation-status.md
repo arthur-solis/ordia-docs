@@ -1,5 +1,5 @@
 # Estado de implementação · MVP integrado para o TCC
-Última revisão documental: 05/11/2026. Referência da integração original: 01/11/2026 (America/Cuiaba). A implementação foi integrada à main da aplicação pelo PR #3 e a documentação pelo PR #1. Isso registra integração de código, não implantação nem conclusão do TCC.
+Última revisão documental: 19/11/2026. Esta atualização registra planejamento e protótipos; não revalida o código ou os testes de integração. Referência da integração original: 01/11/2026 (America/Cuiaba). A implementação foi integrada à main da aplicação pelo PR #3 e a documentação pelo PR #1. Isso registra integração de código, não implantação nem conclusão do TCC.
 
 A prioridade atual é revisão funcional e visual, execução local, testes, documentação e demonstração com dados fictícios. Hospedagem e provedores externos serão avaliados após o TCC.
 
@@ -39,4 +39,12 @@ Testes automatizados aprovados na integração são evidência técnica; não su
 ## Após o TCC · Portão de produção
 Exigir CI verde no commit final, validação dos cenários de aceite, dependências revisadas, proteção de branch compatível com o plano, HTTPS e segredos configurados, restauração testada e revisão do responsável pelo ambiente.
 Financeiro/faturamento integram a visão hospitalar e permanecem fora da base implementada. Notificações gerais e integrações externas continuam a depender de especificação própria.
+
+
+## Consolidação visual e funcional de novembro
+As etapas 11 a 14 foram definidas inicialmente e os [protótipos](../prototypes/README.md) estão em andamento. O [roteiro](planning-progress.md) registra o ponto de retomada.
+
+Permissões por par perfil–setor, cancelamento exclusivo pela Gestão de contas, arquivamento restrito, cadastro provisório e regularização, atribuição do médico no atendimento e os novos fluxos de elegibilidade/SP-SADT não foram comprovados como implementados nesta atualização. A base deve ser confrontada com as novas regras na etapa 18. Os relatórios clínicos, catálogo completo de documentos e auditoria ampliada de leitura também são planejamento.
+
+Nenhuma imagem comprova integração com operadora. Não foram alterados contratos de API para representar funcionalidades ainda não implementadas.
 

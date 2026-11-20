@@ -14,7 +14,8 @@ Decisão aprovada para consultas e exames marcados. A chegada espontânea no pro
 | Agendar | Cria a reserva com estado **Agendado** | Recepção autorizada |
 | Confirmar | Muda para **Confirmado** e mantém os recursos | Recepção autorizada |
 | Remarcar | Atualiza horário ou recursos após nova validação | Recepção autorizada |
-| Cancelar | Muda para **Cancelado**, libera a reserva e mantém o histórico | Recepção autorizada |
+| Solicitar cancelamento | Encaminha pedido com motivo para análise, sem cancelar diretamente | Recepção autorizada |
+| Cancelar | Muda para **Cancelado**, libera a reserva e mantém o histórico | Gestão de contas autorizada |
 | Concluir | Muda para **Concluído** após o atendimento | Equipe assistencial autorizada |
 | Registrar ausência | Muda para **Ausência** quando o paciente não comparece | Recepção autorizada |
 
@@ -29,3 +30,7 @@ Agendamentos cancelados, concluídos ou com ausência preservam o histórico. Um
 - Recepção pode registrar ausência. Conclusão exige permissão assistencial.
 
 A base já possui agendamentos e checagem de conflito. O fluxo de seleção por setor e as novas regras de compartilhamento precisam ser validados como parte da evolução hospitalar.
+
+## Revisão da responsabilidade
+A etapa 14 substituiu a permissão inicial de cancelamento direto pela recepção. O servidor deve distinguir solicitar de executar. Cancelar agendamento, cancelar/arquivar atendimento e cancelar guia externa TISS são operações diferentes; consulte [comportamentos comuns](hospital-interface-behavior.md).
+

@@ -43,3 +43,16 @@ Esta área transforma a visão do Documento Mestre em requisitos, casos de uso, 
 O núcleo foi implementado e integrado à main. A etapa atual é consolidar a entrega do TCC: revisar regras e telas, detalhar navegação e estados da interface, validar execução local e reunir evidências. Consulte o [estado de implementação](implementation-status.md) e o [MVP](mvp.md).
 
 A visão agora abrange gestão hospitalar administrativa e assistencial, incluindo financeiro/faturamento. A base implementada é um subconjunto; requisitos completos e recorte de demonstração do TCC serão definidos progressivamente. Notificações gerais e integrações externas continuam sem implementação planejada nesta etapa. Produção será avaliada após o TCC.
+
+## Planejamento e protótipos · 19/11/2026
+- [Roteiro de 20 etapas e progresso](planning-progress.md)
+- [Documentos e arquivos](hospital-documents.md)
+- [Relatórios e auditoria](hospital-reports-audit.md)
+- [Configurações e visão geral](hospital-settings-dashboard.md)
+- [Comportamentos comuns, responsabilidades e cancelamento interno](hospital-interface-behavior.md)
+- [Atendimento, convênio e guia SP/SADT](hospital-attendance-tiss.md)
+- [Fontes ANS/TISS utilizadas](tiss-source-register.md)
+- [Galeria de protótipos](../prototypes/README.md)
+
+As definições posteriores de responsabilidade prevalecem no planejamento: Gestão de contas cancela agendamentos e arquiva pacientes; TI suspende funcionários; recepção solicita e acompanha cancelamentos. A matriz da base descreve o código anterior até sua conferência.
+
