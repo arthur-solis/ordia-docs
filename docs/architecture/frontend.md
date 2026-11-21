@@ -12,3 +12,7 @@ Fusos são apresentados pela instituição; horários inexistentes/ambíguos por
 Typecheck, build e Playwright em CI. Testes de interface usam servidor fictício isolado com dados demonstrativos.
 Os testes HTTP com MySQL verificam os serviços de domínio; há fluxo de navegador com API real na validação da integração. O ambiente local da apresentação ainda precisa ser executado e conferido.
 Para o TCC ainda é necessário revisar o mapa de telas, os campos/ações, os estados de interface e os protótipos; a compilação não representa aprovação visual. A demonstração ocorre localmente com dados fictícios. Produção será avaliada após o TCC.
+
+## Navegação aprovada para a visão hospitalar
+Ambiente único para funcionários, com menus e painel conforme função/permissões, setor e instituição. Perfis acumulados não exigem novo login para acessar outras áreas autorizadas. O backend continua responsável pelas verificações de acesso; setor selecionado não concede permissão.
+O [mapa inicial de telas e navegação](../product/screen-map-navigation.md) inclui áreas ainda não implementadas e registra pendências de campos, rotas, estados, protótipos e priorização do TCC.

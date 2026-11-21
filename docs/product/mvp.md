@@ -1,6 +1,11 @@
-# MVP do ORDIA
+# MVP da base integrada do ORDIA
 
 Definição do núcleo do ORDIA para o TCC. A base já está integrada à main; as prioridades abaixo organizam a revisão e a demonstração, sem afirmar conclusão acadêmica.
+
+
+
+## Ampliação hospitalar aprovada
+A [visão hospitalar](hospital-scope.md) amplia o planejamento para hospital geral privado, com convênios e particulares e acesso apenas de funcionários. Este documento descreve a base anterior; não especifica integralmente pronto-socorro, internação, prontuário, enfermagem, farmácia, exames, centro cirúrgico ou faturamento hospitalar. Financeiro integra a visão do produto; implementação e recorte demonstrável do TCC serão definidos por etapas.
 
 ## 1. Objetivo do MVP
 
@@ -44,7 +49,7 @@ A ordem considera:
 - relatórios básicos;
 - recuperação de acesso e convites, com possibilidade de captura de e-mail local para demonstração.
 
-## 4. Fora do MVP
+## 4. Fora da base integrada atual
 
 - todo o domínio financeiro, inclusive lançamentos simples;
 - notificações gerais e integrações externas de negócio;
@@ -58,7 +63,7 @@ A ordem considera:
 - marketplace;
 - funcionalidades cuja regra de negócio ainda não esteja definida.
 
-Isso não significa que esses recursos não façam parte do futuro do ORDIA. Significa apenas que não devem bloquear a primeira entrega.
+Financeiro/faturamento e demais áreas hospitalares passaram a integrar a visão aprovada. A lista acima descreve os limites da base existente, não uma exclusão definitiva do TCC. A seleção das próximas entregas será feita por módulo.
 
 ## 5. Fluxo mínimo demonstrável
 

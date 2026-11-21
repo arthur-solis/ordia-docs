@@ -1,0 +1,215 @@
+{
+  "updated": "2026-11-19",
+  "kind": "conceptual-prototypes",
+  "images": [
+    {
+      "slug": "01-login",
+      "source": "exec-50590118-71db-48d5-9b8c-ca030f8f7fc4.png",
+      "path": "docs/prototypes/images/01-login.png",
+      "title": "Login",
+      "status": "Direção visual aprovada",
+      "note": "Entrada de funcionários; recuperação ainda requer telas próprias.",
+      "bytes": 1258283,
+      "sha256": "726449789b37b088eec38fc2a6a8de8a23ceb31fdce6ebe7e42d7df856aec2b4",
+      "gitBlobSha": "e314f6e75318476bcf169b5c4a8007924f95074f"
+    },
+    {
+      "slug": "02-visao-geral-gestao",
+      "source": "exec-583c3045-f305-4498-9103-e7c24d2fd5c1.png",
+      "path": "docs/prototypes/images/02-visao-geral-gestao.png",
+      "title": "Visão geral da gestão",
+      "status": "Referência visual aprovada",
+      "note": "Indicadores fictícios; visão ampla não representa módulos implementados.",
+      "bytes": 1597813,
+      "sha256": "9c4f6c57c72f45a4c146afb11b4f243e5e529ca9117909f54364f0a57a81cbcc",
+      "gitBlobSha": "9bf3edc1d6c74889c3430790d5920447b9ef79c8"
+    },
+    {
+      "slug": "03-equipe",
+      "source": "exec-9c35a961-9862-440b-b99e-5566fb7b551b.png",
+      "path": "docs/prototypes/images/03-equipe.png",
+      "title": "Equipe",
+      "status": "Prévia aprovada no fluxo",
+      "note": "Gestão de acessos pela TI; suspensão não pertence à recepção.",
+      "bytes": 1602190,
+      "sha256": "6359368caaea8880283c70e9340328b8aefddba088b14e6a08eea7085e810e8d",
+      "gitBlobSha": "ca7cc625bfdf458082ffdc49bcd3a69eb155638f"
+    },
+    {
+      "slug": "04-convidar-funcionario",
+      "source": "exec-3588c7fb-84ee-4a11-995a-36ef03aadc24.png",
+      "path": "docs/prototypes/images/04-convidar-funcionario.png",
+      "title": "Convidar funcionário",
+      "status": "Prévia aprovada no fluxo",
+      "note": "Perfis e setores em pares explícitos.",
+      "bytes": 1571471,
+      "sha256": "3820320375c50f8d099e94594f100c75593af57bb4788cffc9725adfe868a774",
+      "gitBlobSha": "152dc7b82f7d100151db8c5de5ebb98b73b66cd9"
+    },
+    {
+      "slug": "05-aceitar-convite",
+      "source": "exec-16ebbd15-7712-4ea7-b2df-402565cba1f9.png",
+      "path": "docs/prototypes/images/05-aceitar-convite.png",
+      "title": "Aceitar convite",
+      "status": "Versão revista",
+      "note": "Removido o link “Já tenho conta no Ordia”; a regra de conta existente permanece no fluxo de acesso.",
+      "bytes": 1561232,
+      "sha256": "d78de2f623f0db38c540d04e12a3d548dc976e89ce6b77c830478f852e98e6f1",
+      "gitBlobSha": "9bbd20c0438a3627491fb18caa738e828357ce8f"
+    },
+    {
+      "slug": "06-painel-recepcao",
+      "source": "exec-a947796e-7b20-47cf-8962-23cadf42e77c.png",
+      "path": "docs/prototypes/images/06-painel-recepcao.png",
+      "title": "Painel da recepção",
+      "status": "Prévia aprovada no fluxo",
+      "note": "Recepção solicita cancelamento e acompanha, sem executá-lo.",
+      "bytes": 1673071,
+      "sha256": "e9da3ebdec2cb1ac85141826122190e468caaee34c413e461d4098d0a0f4545c",
+      "gitBlobSha": "37754c24917a0bca4816396f97b15f602620689e"
+    },
+    {
+      "slug": "07-solicitacoes-cancelamento",
+      "source": "exec-976a13f0-d033-4f34-8892-ce94f2465c5f.png",
+      "path": "docs/prototypes/images/07-solicitacoes-cancelamento.png",
+      "title": "Solicitações de cancelamento",
+      "status": "Fluxo aprovado; vocabulário a revisar",
+      "note": "A coluna “Guia” nesta imagem representa atendimento interno; não é cancelamento TISS. Identificadores G precisam ser alinhados.",
+      "bytes": 1713984,
+      "sha256": "45a811829ad27bc5c8279c6e0af582a8b7096ef13fac8ed78a1a8740a6ea0d8e",
+      "gitBlobSha": "2a9f5a55f6c010a2dbf255d89a3394f2012372ee"
+    },
+    {
+      "slug": "08-cadastrar-paciente",
+      "source": "exec-7d80d46f-4f19-4f72-aafe-3df453744b3b.png",
+      "path": "docs/prototypes/images/08-cadastrar-paciente.png",
+      "title": "Cadastrar paciente",
+      "status": "Prévia aprovada no fluxo",
+      "note": "CPF quando existente; alternativa documental e ao menos um contato precisam estar claros na validação final.",
+      "bytes": 1457634,
+      "sha256": "adf64d77ccb195cb18bb3738e54272184163d7aa06ab04c4a8fdbbf9103b85d4",
+      "gitBlobSha": "61898ff3b4d5aa63f038a7c6be42f35457b3d608"
+    },
+    {
+      "slug": "09-possivel-duplicidade",
+      "source": "exec-8ee216a0-a203-4a13-b27d-6c0ca2a019df.png",
+      "path": "docs/prototypes/images/09-possivel-duplicidade.png",
+      "title": "Possível duplicidade",
+      "status": "Prévia aprovada no fluxo",
+      "note": "Conferência humana; sem mesclagem automática de pessoas.",
+      "bytes": 1609978,
+      "sha256": "90060f68630ab0c49ff7b798fc88eba8ef28a272eac8da277dafd6950c7da0b0",
+      "gitBlobSha": "5b64e21aa3ebb42cc787b6aa104ec4272d3d4cec"
+    },
+    {
+      "slug": "10-cadastro-provisorio",
+      "source": "exec-7444b54b-ab1a-479c-b089-9095f7800bfc.png",
+      "path": "docs/prototypes/images/10-cadastro-provisorio.png",
+      "title": "Cadastro provisório",
+      "status": "Prévia aprovada no fluxo",
+      "note": "Identidade pendente e número interno; regularização com histórico ainda a detalhar.",
+      "bytes": 1458189,
+      "sha256": "41fadaef4fe37f792f75a9b444380ce12a56c890d6d495fe7a5fa4c37095d2d8",
+      "gitBlobSha": "b2c8fe3383becee5597ca62a0f353ba96590c717"
+    },
+    {
+      "slug": "11-lista-pacientes",
+      "source": "exec-67ad8817-11f0-48e1-bb35-d7bc7cc829fc.png",
+      "path": "docs/prototypes/images/11-lista-pacientes.png",
+      "title": "Lista de pacientes",
+      "status": "Prévia aprovada no fluxo",
+      "note": "Busca e situações cadastrais; não concede arquivamento à recepção.",
+      "bytes": 1665114,
+      "sha256": "81b1e11bfdb346baf9a5ee6e62029c07036e6db95028c697c787064dcd2bd415",
+      "gitBlobSha": "c3d5f0a7ae9988758bc36ea89cd0262b58ed809f"
+    },
+    {
+      "slug": "12-ficha-paciente",
+      "source": "exec-3fcfae0e-f243-4553-87bc-f0dca1646274.png",
+      "path": "docs/prototypes/images/12-ficha-paciente.png",
+      "title": "Ficha do paciente",
+      "status": "Prévia aprovada; vocabulário a revisar",
+      "note": "Histórico usa “Guia”/“Abrir guia” para atendimento interno. Corrigir para atendimento na revisão.",
+      "bytes": 1676138,
+      "sha256": "e86ac7ce0f7781af15012207ba2f9c5ec879912f619e45d47a6d20c480859639",
+      "gitBlobSha": "1c87e1cbae031e048b0e1e6dfbf12b382d71bb66"
+    },
+    {
+      "slug": "13-novo-atendimento",
+      "source": "exec-326ac16d-77b0-470e-8202-9e26d7f5ab7d.png",
+      "path": "docs/prototypes/images/13-novo-atendimento.png",
+      "title": "Novo atendimento",
+      "status": "Versão revista orientada a TISS",
+      "note": "Regime separado de caráter. “A confirmar” é estado interno. Não equivale a elegibilidade.",
+      "bytes": 1695516,
+      "sha256": "87178026b0c5d08d70c82a6008ab8f0618ecdbba4419e94f2e93c1ff5f6baf83",
+      "gitBlobSha": "a3f16266ad2809987fdefb2da3e7e8e9530703e5"
+    },
+    {
+      "slug": "14-resumo-atendimento",
+      "source": "exec-d72afb75-5428-4b74-adb5-d96fd2a1adc8.png",
+      "path": "docs/prototypes/images/14-resumo-atendimento.png",
+      "title": "Resumo do atendimento",
+      "status": "Versão revista",
+      "note": "Sem linha Setor no cartão; médico responsável pode aguardar atribuição.",
+      "bytes": 1740152,
+      "sha256": "895ee5963d331296e1e021975d8e628adb19ae82b2ca15e484937b7e20548108",
+      "gitBlobSha": "9dd6a53f95e36ec0da0257459aff4b40820dff70"
+    },
+    {
+      "slug": "15-dados-convenio",
+      "source": "exec-80f98cc7-cbb1-4c50-b366-faf993551288.png",
+      "path": "docs/prototypes/images/15-dados-convenio.png",
+      "title": "Dados do convênio",
+      "status": "Prévia discutida",
+      "note": "Elegibilidade ainda não consultada; presença e validade têm regras próprias. Rascunho não equivale a mensagem validada.",
+      "bytes": 1648061,
+      "sha256": "dc3dc10cd1972fd952b1107fc0243b10746da063929f93d1e92a264cb9ade0bd",
+      "gitBlobSha": "7f304844c34a9f78df1c2996c4e9ce9865390d05"
+    },
+    {
+      "slug": "16-guias-autorizacoes",
+      "source": "exec-0c5ea517-71b8-4b52-8fe1-7e7f5c7d66f4.png",
+      "path": "docs/prototypes/images/16-guias-autorizacoes.png",
+      "title": "Guias e autorizações",
+      "status": "Prévia aprovada no fluxo",
+      "note": "Estado vazio; preparar guia não significa transmitir ou autorizar.",
+      "bytes": 1568409,
+      "sha256": "d5d49b505878197661710bc5cda71c77c12a81014c94885ec37f892505b39aa5",
+      "gitBlobSha": "e9587d37d4b762b924869c7b188d8425e368a558"
+    },
+    {
+      "slug": "17-definir-medico",
+      "source": "exec-682faac9-bfb0-4615-aeb1-4501dc561444.png",
+      "path": "docs/prototypes/images/17-definir-medico.png",
+      "title": "Definir médico responsável",
+      "status": "Prévia aprovada no fluxo",
+      "note": "Registros profissionais demonstrativos; responsável não é automaticamente solicitante.",
+      "bytes": 1683974,
+      "sha256": "8bd22fb2a47d25376019c5c5840c27907916a2817c2e8529bfae94810e7d143b",
+      "gitBlobSha": "aa089346fe6a498c41620b3f4273eccf6fc7b20d"
+    },
+    {
+      "slug": "18-preparar-guia-spsadt",
+      "source": "exec-17fb1ce1-9ba2-4652-9eb2-62acd15ef0a3.png",
+      "path": "docs/prototypes/images/18-preparar-guia-spsadt.png",
+      "title": "Preparar guia SP/SADT",
+      "status": "Menu corrigido e aceito; formulário em revisão",
+      "note": "Logo e menu restaurados. Marcação de obrigatoriedade e dados do contratado solicitante ainda precisam de revisão.",
+      "bytes": 1668045,
+      "sha256": "8938612854adb6e6cdb1fcd62f8dd9068d13dea3e7a657b51f351524eacc17ee",
+      "gitBlobSha": "39c89c28355a02214e2e75aac5553c721cbedbce"
+    },
+    {
+      "slug": "19-dados-complementares",
+      "source": "exec-c11acb5d-03ba-4ca9-9aab-a221fb35ab84.png",
+      "path": "docs/prototypes/images/19-dados-complementares.png",
+      "title": "Dados complementares SP/SADT",
+      "status": "Última prévia; revisão pendente",
+      "note": "Executante/CNES condicionais; indicador de recém-nato obrigatório no envio. Sem aprovação visual explícita após a apresentação.",
+      "bytes": 1690316,
+      "sha256": "0671bf574a6813ba291c84369d8f441a602c24aa93ac2284751fdb743223ae33",
+      "gitBlobSha": "6d3783a3c29cec0140ad4ceb41073d6c01839a00"
+    }
+  ]
+}

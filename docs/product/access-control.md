@@ -1,5 +1,9 @@
 # Matriz de Acesso do MVP
 
+## Ampliação hospitalar aprovada
+A [visão hospitalar](hospital-scope.md) amplia o planejamento para hospital geral privado, com convênios e particulares e acesso apenas de funcionários. Este documento descreve a base anterior; não especifica integralmente pronto-socorro, internação, prontuário, enfermagem, farmácia, exames, centro cirúrgico ou faturamento hospitalar. Financeiro integra a visão do produto; implementação e recorte demonstrável do TCC serão definidos por etapas.
+
+
 Catálogo inicial de permissões do ORDIA e composição das roles do MVP. Permissões são avaliadas no backend, sempre no Tenant Context e com Membership `ACTIVE`.
 
 ## 1. Convenções
@@ -66,6 +70,10 @@ Catálogo inicial de permissões do ORDIA e composição das roles do MVP. Permi
 - `AUDITOR` consulta Patient, Agenda, relatórios e auditoria, sem alterar registros.
 - `TENANT_ADMIN` administra seu Tenant, sem acesso a qualquer outro Tenant.
 - `FINANCE` não acessa dados financeiros até que o domínio Financeiro seja implementado e a matriz seja ampliada.
+
+## Evolução hospitalar
+
+A [decisão sobre equipe e permissões](hospital-team-permissions.md) define as responsabilidades da TI e os escopos por instituição e setor para a evolução do hospital.
 
 ## Documentos relacionados
 

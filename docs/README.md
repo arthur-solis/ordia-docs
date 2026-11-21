@@ -11,6 +11,8 @@ A documentação oficial do ORDIA fica centralizada nesta pasta.
 - [Multi-Tenant](multi-tenant/README.md): isolamento entre organizações.
 - [API](api/README.md): convenções, [catálogo REST](api/mvp-contracts.md) e [OpenAPI inicial](api/openapi-mvp.yaml).
 - [Identidade Visual](brand/README.md).
+- [Protótipos: inventário e galeria de 19 telas](prototypes/README.md).
+- [Roteiro do TCC: progresso e próxima atividade](product/planning-progress.md).
 - [Decisões Arquiteturais](decisions/README.md).
 
 ## Hierarquia de fontes
@@ -24,6 +26,17 @@ A documentação oficial do ORDIA fica centralizada nesta pasta.
 
 A documentação descreve o MVP integrado à main, com prioridade para execução local, revisão e demonstração do TCC. O código e os testes permanecem privados. Integração não significa implantação em produção.
 Consulte o [estado de implementação](product/implementation-status.md) e a [decisão de conteúdo privado](decisions/ADR-0002-private-content-mvp.md).
+
+## Planejamento hospitalar aprovado
+- [Cenário: hospital geral privado, convênios e particulares](product/hospital-scope.md)
+- [Perfis de funcionários e responsabilidades](product/hospital-user-profiles.md)
+- [Mapa inicial de telas e navegação em ambiente único](product/screen-map-navigation.md)
+
+Os novos módulos são planejamento e não devem ser confundidos com a base já implementada.
+
+## Consolidação de 19/11/2026
+As definições iniciais das etapas 11 a 14 foram registradas. A etapa 15 segue em andamento, com imagens conceituais e ressalvas por tela. Veja [atendimento/TISS](product/hospital-attendance-tiss.md) e o [registro das fontes ANS](product/tiss-source-register.md). A atualização não implementa os novos fluxos nem comprova conformidade.
+
 
 ## Identidade visual
 Consulte as [diretrizes da marca](brand/README.md) e a [base da paleta aprovada](brand/palette.md). Os códigos exatos e tokens de componentes ainda serão definidos.
