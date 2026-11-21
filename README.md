@@ -6,6 +6,8 @@ Documentação pública do ORDIA, plataforma de gestão para instituições de s
 - [Tutoriais](tutorials/README.md)
 - [Imagens](docs/images/imagens.md)
 - [Vídeos](videos/README.md)
+- [Roteiro e progresso do TCC](docs/product/planning-progress.md)
+- [Galeria de protótipos](docs/prototypes/README.md)
 
 ## Sobre este repositório
 
@@ -16,3 +18,4 @@ Este repositório possui histórico independente. As especificações incluem fu
 ## Materiais públicos
 
 Use dados fictícios em exemplos, imagens e gravações. Revise credenciais, dados pessoais, URLs internas e metadados antes de publicar novos materiais.
+

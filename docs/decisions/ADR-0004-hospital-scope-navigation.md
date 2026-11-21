@@ -1,0 +1,9 @@
+# ADR-0004 · Visão hospitalar, perfis e ambiente único
+- Estado: adotado no planejamento em 05/11/2026, consolidando decisões dos encontros de 02, 03 e 05/11.
+- Contexto: o núcleo anterior cobria identidade, pacientes e agenda com apoio operacional. O autor ampliou a visão para um hospital geral privado, com convênios e particulares, acesso somente de funcionários e áreas administrativas e assistenciais.
+- Decisão: adotar a [visão hospitalar](../product/hospital-scope.md), os [perfis funcionais](../product/hospital-user-profiles.md) e o [mapa inicial de telas](../product/screen-map-navigation.md). Usar ambiente único, com menus e painel conforme permissões, setor e instituição; perfis podem ser acumulados.
+- Alternativa considerada: ambientes separados para administrativo e assistencial. O ambiente único foi escolhido para permitir continuidade entre áreas e acesso às funções autorizadas pelo mesmo login.
+- Limites: SUS e portal do paciente ficam fora do cenário inicial. O ambiente único não unifica permissões nem autoriza acesso irrestrito ao prontuário. As novas áreas ainda precisam de requisitos, regras e validação por módulo.
+- Relação com ADR-0003: substitui apenas a exclusão do financeiro da visão do produto. Financeiro/faturamento passam a integrar a visão hospitalar; sua implementação e inclusão no recorte demonstrável do TCC serão planejadas. A prioridade acadêmica, o ambiente local e a operação produtiva posterior permanecem.
+- Consequências: documentos do núcleo existente continuam como referência da base implementada, não como catálogo completo hospitalar. Nenhum novo módulo, role, endpoint ou tela é considerado implementado pela aprovação deste documento. A entrega do TCC não fica automaticamente comprometida com todos os módulos.
+- Próxima etapa: identidade visual; detalhamento funcional e implementação seguirão por entregas pequenas.

@@ -2,11 +2,11 @@
 
 Requisitos funcionais do ORDIA, classificados por etapa.
 
-## Escopo da entrega do TCC
+## Base existente e ampliação do planejamento
 
 O núcleo abrange identidade/sessão, organização/membros, autorização, pacientes, profissionais/recursos e disponibilidade, agenda, anexos, relatórios/exportações e auditoria. A implementação integrada deve ser revisada contra as regras e os critérios de aceite.
 
-Os RF-FIN-01 a RF-FIN-04 são **futuros, fora do TCC/MVP atual**. Notificações gerais e integrações de negócio externas também ficam fora. Captura local dos e-mails de recuperação/convite pertence aos fluxos de identidade e não amplia esse escopo.
+Os RF-FIN-01 a RF-FIN-04 são **planejados na visão hospitalar, ainda fora da base implementada**. A inclusão nas próximas entregas do TCC será definida por etapas; consulte o [cenário hospitalar](hospital-scope.md). Notificações gerais e integrações de negócio externas também ficam fora. Captura local dos e-mails de recuperação/convite pertence aos fluxos de identidade e não amplia esse escopo.
 
 Hospedagem pública e contratação de provedores não são critérios de conclusão do TCC. Consulte [MVP](mvp.md) e [estado de implementação](implementation-status.md).
 
@@ -26,7 +26,7 @@ Transformar a visão do Documento Mestre em comportamentos verificáveis do prod
 | ACT-06 | Auditor/Consulta | Acessa informações conforme escopo somente leitura |
 | ACT-07 | Administrador da plataforma | Opera funções globais da plataforma, fora do escopo do Tenant comum |
 
-Para o núcleo do TCC, a referência vigente é a [matriz de acesso](access-control.md). ACT-05 (Financeiro) e ACT-07 (Administrador da plataforma) são atores futuros e não implicam telas ou funções na entrega atual.
+Para o núcleo do TCC, a referência vigente é a [matriz de acesso](access-control.md). ACT-05 (Financeiro) integra o planejamento hospitalar, mas não possui funções financeiras implementadas nesta base. ACT-07 (Administrador da plataforma) permanece fora do cenário inicial. Os [perfis hospitalares aprovados](hospital-user-profiles.md) detalham responsabilidades e ainda exigem mapeamento para permissões por operação.
 
 ## 3. Requisitos por domínio
 
@@ -80,7 +80,7 @@ Para o núcleo do TCC, a referência vigente é a [matriz de acesso](access-cont
 
 **RF-AGE-05** O sistema deve reduzir conflitos de agenda por meio de validações de disponibilidade.
 
-### 3.5 Financeiro · Futuro, fora do TCC/MVP
+### 3.5 Financeiro · Planejado na visão hospitalar, não implementado na base
 
 **RF-FIN-01** Usuários autorizados devem poder registrar informações financeiras suportadas pelo produto.
 
@@ -137,7 +137,7 @@ Uma funcionalidade só deve ser considerada pronta quando, além do fluxo princi
 - testes para cenários relevantes;
 - documentação quando a funcionalidade introduzir uma regra importante.
 
-## 6. Fora do escopo do MVP
+## 6. Limites da base e evolução
 
 A princípio, não fazem parte do primeiro incremento obrigatório:
 
@@ -147,7 +147,7 @@ A princípio, não fazem parte do primeiro incremento obrigatório:
 - marketplace;
 - integrações com dezenas de sistemas externos;
 - automações avançadas sem caso de uso validado;
-- todo o domínio financeiro (RF-FIN-01 a RF-FIN-04), incluindo operações simples;
+- funcionalidades financeiras (RF-FIN-01 a RF-FIN-04) ainda não implementadas, embora incluídas na visão hospitalar;
 - notificações gerais e integrações externas de negócio.
 
 Esses itens podem entrar futuramente mediante priorização.

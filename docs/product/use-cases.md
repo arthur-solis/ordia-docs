@@ -1,6 +1,6 @@
 # Casos de Uso
 
-Casos de uso do ORDIA. UC-01 a UC-07 e UC-09 a UC-12 integram o núcleo do TCC; UC-08 é futuro. A implementação deve seguir também as [decisões do MVP](mvp-decisions.md), a [matriz de acesso](access-control.md) e os [cenários de aceite](acceptance-criteria.md).
+Casos de uso do ORDIA. UC-01 a UC-07 e UC-09 a UC-12 descrevem o núcleo anterior; UC-08 integra agora a visão hospitalar e ainda precisa de detalhamento e implementação. O catálogo completo dos novos módulos e o recorte demonstrável do TCC serão definidos por etapas. Consulte o [cenário hospitalar](hospital-scope.md). A implementação deve seguir também as [decisões do MVP](mvp-decisions.md), a [matriz de acesso](access-control.md) e os [cenários de aceite](acceptance-criteria.md).
 
 O catálogo descreve comportamentos e não substitui o detalhamento de telas. A demonstração usa dados fictícios e ambiente local; contratação de provedores externos não é pré-requisito acadêmico.
 
@@ -107,7 +107,7 @@ O catálogo descreve comportamentos e não substitui o detalhamento de telas. A 
 5. Sistema atualiza o agendamento.
 6. Sistema registra evento/auditoria quando aplicável.
 
-## UC-08 · Registrar operação financeira · Futuro, fora do TCC/MVP
+## UC-08 · Registrar operação financeira · Planejado, fora da base implementada
 
 **Ator:** financeiro ou usuário autorizado
 

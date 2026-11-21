@@ -26,3 +26,5 @@ As decisões devem ser numeradas e não devem ser apagadas quando forem substitu
 - [ADR-0002 · Conteúdo privado no MVP](ADR-0002-private-content-mvp.md)
 
 - [ADR-0003 · Prioridade do TCC e stack da base integrada](ADR-0003-tcc-first.md)
+
+- [ADR-0004 · Visão hospitalar, perfis e ambiente único](ADR-0004-hospital-scope-navigation.md)
