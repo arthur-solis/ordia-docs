@@ -1,7 +1,7 @@
 # Roteiro do TCC · Progresso
-Atualizado em 19/11/2026 a partir das decisões desta etapa. Um encontro pode cobrir mais de um assunto; passagem de dias não conclui tarefas.
+Atualizado em 20/11/2026 a partir das decisões desta etapa. Um encontro pode cobrir mais de um assunto; passagem de dias não conclui tarefas.
 
-**14 etapas discutidas e aprovadas no planejamento; etapa 15 em andamento.** Isso não significa 14 módulos implementados ou documentação final de todos os detalhes. A base de código e suas limitações estão em [estado de implementação](implementation-status.md).
+**14 etapas discutidas e aprovadas no planejamento; prototipação antecipada pausada; conferência inicial do código realizada.** Isso não significa 14 módulos implementados ou documentação final de todos os detalhes. A base de código e suas limitações estão em [estado de implementação](implementation-status.md).
 
 | Etapa | Foco | Situação e resultado |
 |---|---|---|
@@ -19,17 +19,19 @@ Atualizado em 19/11/2026 a partir das decisões desta etapa. Um encontro pode co
 | 12 | Relatórios e auditoria | Filtros/exportações e rastreamento de acessos sensíveis |
 | 13 | Configurações e visão geral | Definição inicial aprovada, ajustável após validar os fluxos |
 | 14 | Comportamentos comuns | Estados de tela, confirmações, conflitos e responsabilidades |
-| 15 | Protótipos | **Em andamento:** acesso, equipe, recepção, pacientes e atendimento/convênio/SP-SADT |
-| 16 | Responsividade e acessibilidade | Pendente |
-| 17 | Revisão dos fluxos | Pendente; já há ajustes identificados no inventário |
-| 18 | Conferência do código existente | Pendente; comparar regras atuais com o código, sem presumir implementação |
+| 15 | Protótipos | **Pausada por decisão do autor:** base suficiente para iniciar; novas telas conforme implementação |
+| 16 | Responsividade e acessibilidade | Incorporar ao aceite de cada módulo; não concluída globalmente |
+| 17 | Revisão dos fluxos | Executar por módulo; permanecem fluxos e detalhes pendentes |
+| 18 | Conferência do código existente | Conferência inicial da main concluída; execução local e branches fora do escopo |
 | 19 | Ambiente local com dados fictícios | Pendente de validação reproduzível |
-| 20 | Plano de implementação por módulo | Pendente |
+| 20 | Plano de implementação por módulo | Plano inicial registrado; nenhum item implementado por esta atualização |
 
 ## Ponto de retomada
-Última prévia apresentada: **Dados complementares da guia SP/SADT**. Está registrada para revisão, sem aprovação visual explícita posterior. A próxima atividade é revisar essa prévia e as pendências normativas do formulário antes de seguir com outros estados do fluxo.
+**Começar pelo ambiente local com dados fictícios e pelas pendências técnicas confirmadas.** Depois adaptar estrutura visual/acesso, equipe/permissões e pacientes, nessa ordem. O [plano de adequação do código](implementation-backlog.md) detalha evidências, prioridades e critérios de aceite.
 
-A [galeria de protótipos](../prototypes/README.md) identifica telas, versões e ressalvas. O planejamento preserva o ritmo de uma atividade pequena por encontro.
+Após a primeira galeria, o chat refinou as seções da SP/SADT, o rascunho salvo, exportação PDF, documentos administrativos, histórico e solicitação/acompanhamento de cancelamento. A [galeria](../prototypes/README.md) publicada ainda é o conjunto de 19 imagens; nem todas as revisões posteriores estão incorporadas aos arquivos do repositório. O PDF de duas páginas é um exemplo separado, sem gerador equivalente na aplicação.
+
+O autor decidiu interromper a criação antecipada de telas e produzi-las conforme o desenvolvimento dos módulos. Não é necessário terminar todos os protótipos para iniciar o código. Não considerar responsividade, acessibilidade ou fluxos restantes concluídos apenas pela mudança de ordem.
 
 ## Regras mantidas
 - Hospedagem e serviços de produção ficam para depois do TCC.

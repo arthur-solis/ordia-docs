@@ -56,3 +56,8 @@ A visão agora abrange gestão hospitalar administrativa e assistencial, incluin
 
 As definições posteriores de responsabilidade prevalecem no planejamento: Gestão de contas cancela agendamentos e arquiva pacientes; TI suspende funcionários; recepção solicita e acompanha cancelamentos. A matriz da base descreve o código anterior até sua conferência.
 
+
+## Adequação do código · 20/11/2026
+- [Plano de implementação com prioridades, evidências e critérios de aceite](implementation-backlog.md)
+
+A conferência inicial do código foi realizada. O trabalho passa a ocorrer por módulo; os protótipos adicionais serão produzidos conforme necessário. Ambiente local e adequações continuam pendentes.

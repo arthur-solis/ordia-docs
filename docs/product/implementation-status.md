@@ -1,5 +1,5 @@
 # Estado de implementação · MVP integrado para o TCC
-Última revisão documental: 19/11/2026. Esta atualização registra planejamento e protótipos; não revalida o código ou os testes de integração. Referência da integração original: 01/11/2026 (America/Cuiaba). A implementação foi integrada à main da aplicação pelo PR #3 e a documentação pelo PR #1. Isso registra integração de código, não implantação nem conclusão do TCC.
+Última revisão documental: 20/11/2026. Conferência estática da main da aplicação no commit `648efa574ba751605b1f4cab1426bbd000877ee3`, com consulta das execuções de CI existentes; sem execução local nesta revisão. Referência da integração original: 01/11/2026 (America/Cuiaba). A implementação foi integrada à main da aplicação pelo PR #3 e a documentação pelo PR #1. Isso registra integração de código, não implantação nem conclusão do TCC.
 
 A prioridade atual é revisão funcional e visual, execução local, testes, documentação e demonstração com dados fictícios. Hospedagem e provedores externos serão avaliados após o TCC.
 
@@ -44,7 +44,14 @@ Financeiro/faturamento integram a visão hospitalar e permanecem fora da base im
 ## Consolidação visual e funcional de novembro
 As etapas 11 a 14 foram definidas inicialmente e os [protótipos](../prototypes/README.md) estão em andamento. O [roteiro](planning-progress.md) registra o ponto de retomada.
 
-Permissões por par perfil–setor, cancelamento exclusivo pela Gestão de contas, arquivamento restrito, cadastro provisório e regularização, atribuição do médico no atendimento e os novos fluxos de elegibilidade/SP-SADT não foram comprovados como implementados nesta atualização. A base deve ser confrontada com as novas regras na etapa 18. Os relatórios clínicos, catálogo completo de documentos e auditoria ampliada de leitura também são planejamento.
+Permissões por par perfil–setor, cancelamento exclusivo pela Gestão de contas, arquivamento restrito, cadastro provisório e regularização, atribuição do médico no atendimento e os novos fluxos de elegibilidade/SP-SADT não foram comprovados como implementados nesta atualização. A conferência inicial da etapa 18 confirmou essas diferenças no escopo examinado; a adequação e a validação em execução permanecem pendentes. Os relatórios clínicos, catálogo completo de documentos e auditoria ampliada de leitura também são planejamento.
 
 Nenhuma imagem comprova integração com operadora. Não foram alterados contratos de API para representar funcionalidades ainda não implementadas.
 
+
+## Plano de adequação após a conferência
+O [plano de implementação](implementation-backlog.md) registra diferenças confirmadas, referências de arquivo/linha, prioridades e aceite. A base contém cadastro inicial público de instituição, perfis sem setor, cancelamento direto pela recepção, pacientes básicos e exportações genéricas. Esses comportamentos ainda não correspondem ao planejamento hospitalar posterior.
+
+Testes históricos do commit conferido: 48 no backend e 5 no frontend aprovados. A auditoria de dependências posterior falhou por chave NVD ausente/inválida e o armazenamento de artefatos atingiu quota; a análise de vulnerabilidades não foi concluída nessa execução. Consulte as evidências e limites no plano.
+
+A prototipação antecipada foi pausada pelo autor. Próximas telas, responsividade, acessibilidade e revisão dos fluxos serão trabalhadas durante cada módulo; não foram concluídas globalmente. Nenhum código da aplicação foi alterado por esta atualização documental.

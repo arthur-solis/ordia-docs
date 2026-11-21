@@ -1,8 +1,13 @@
 # Protótipos do Ordia
 Atualização: 19/11/2026. Prévia conceitual com dados fictícios, elaborada para planejamento do TCC. As imagens foram produzidas com apoio de geração de imagens e revisadas ao longo do fluxo; não são capturas do código em execução.
 
+## Direção de trabalho atual · 20/11/2026
+A criação antecipada de protótipos está **pausada por decisão do autor**. A base existente orientará a implementação; novas telas serão criadas quando o módulo precisar delas. Isso não conclui a revisão dos fluxos nem a responsividade/acessibilidade.
+
+Após este conjunto de 19 imagens, foram discutidos refinamentos SP/SADT, rascunho salvo/PDF, documentos administrativos, histórico e solicitação/acompanhamento de cancelamento. Os arquivos desta galeria ainda não incluem todas essas revisões. O [roteiro](../product/planning-progress.md) e o [plano de adequação](../product/implementation-backlog.md) são o ponto de retomada para desenvolver.
+
 ## Como interpretar
-“Prévia aprovada” registra a direção discutida no chat, não aprovação clínica, normativa ou de produção. Telas antigas mantidas no conjunto podem exigir alinhamento de vocabulário. O formulário SP/SADT está em revisão e não está completo para transmissão. A última prévia de dados complementares aguarda revisão.
+“Prévia aprovada” registra a direção discutida no chat, não aprovação clínica, normativa ou de produção. Telas antigas mantidas no conjunto podem exigir alinhamento de vocabulário. O formulário SP/SADT está em revisão e não está completo para transmissão. A lista abaixo registra o estado daquela publicação. Houve revisões posteriores no chat; ela não deve ser interpretada como inventário atualizado de todas as prévias.
 
 Para implementação, prevalecem as regras textuais atualizadas e os materiais ANS indicados em [atendimento/TISS](../product/hospital-attendance-tiss.md), não erros ou omissões gráficos. Não há autorização ou consulta real à operadora nestas imagens.
 
