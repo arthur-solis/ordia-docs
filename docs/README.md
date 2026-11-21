@@ -37,3 +37,6 @@ Os novos módulos são planejamento e não devem ser confundidos com a base já 
 ## Consolidação de 19/11/2026
 As definições iniciais das etapas 11 a 14 foram registradas. A etapa 15 segue em andamento, com imagens conceituais e ressalvas por tela. Veja [atendimento/TISS](product/hospital-attendance-tiss.md) e o [registro das fontes ANS](product/tiss-source-register.md). A atualização não implementa os novos fluxos nem comprova conformidade.
 
+
+## Identidade visual
+Consulte as [diretrizes da marca](brand/README.md) e a [base da paleta aprovada](brand/palette.md). Os códigos exatos e tokens de componentes ainda serão definidos.
